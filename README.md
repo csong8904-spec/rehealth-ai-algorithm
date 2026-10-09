@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/banner.svg" width="100%" alt="ReHealth AI — Fail-Closed Health Intelligence" />
+  <img src="docs/assets/brand-hero.png" width="100%" alt="ReHealth AI — Fail-Closed Health Intelligence" />
 </p>
 
 <h1 align="center">ReHealth AI</h1>
@@ -186,6 +186,7 @@ honest, safety-first health-AI baseline.
 ## License and data rights
 
 Code is licensed under [Apache-2.0](LICENSE). Datasets, model weights, and dependencies retain their own
-licenses. The software license grants no medical authorization, data rights, or approval for clinical use.
+licenses. The software license grants no medical authorization, data rights, trademark rights, permission
+to imply endorsement, or approval for clinical use. See the [brand asset policy](docs/brand/README.md).
 
 <p align="center"><sub>Built for evidence over confidence · 可验证，胜过看起来可信</sub></p>

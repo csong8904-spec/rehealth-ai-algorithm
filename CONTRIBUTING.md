@@ -13,3 +13,6 @@ Contributions to signal processing, tests, safety controls, documentation, and r
 are welcome. Never commit personal health information, credentials, raw audit logs, or restricted data.
 Evaluate models with subject-isolated splits, disclose regressions, run the full test suite, and preserve
 the non-diagnostic, fail-closed behavior.
+
+The ReHealth name and official logo are brand assets. The Apache-2.0 code license does not grant
+trademark rights or permission to imply endorsement.

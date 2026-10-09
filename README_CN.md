@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/banner.svg" width="100%" alt="ReHealth AI" /></p>
+<p align="center"><img src="docs/assets/brand-hero.png" width="100%" alt="睿禾健康 ReHealth AI" /></p>
 
 # ReHealth AI 中文说明
 
@@ -44,4 +44,6 @@ python -m healthsynth.cli demo --model artifacts/risk_model.json
 模型卡和备案材料均位于 [`docs/`](docs/)；贡献前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)，
 安全问题请按 [SECURITY.md](SECURITY.md) 私密报告。
 
-代码采用 [Apache-2.0](LICENSE) 许可。数据集和基础模型遵循各自许可证。
+代码采用 [Apache-2.0](LICENSE) 许可，数据集和基础模型遵循各自许可证。该开源许可不授予
+“睿禾健康 / ReHealth AI”名称、官方 Logo 等品牌资产的商标使用权，也不得暗示官方背书；
+详见[品牌资产说明](docs/brand/README.md)。
