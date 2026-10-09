@@ -3,6 +3,12 @@
 <p align="center"><strong>面向可穿戴设备与体检数据的安全健康趋势报告生成合成算法</strong><br/>
 <a href="README_EN.md">English</a> · <a href="docs/algorithm-design.md">算法设计</a> · <a href="docs/benchmark-results.md">真实数据评测</a></p>
 
+<p align="center">
+  <a href="https://github.com/csong8904-spec/rehealth-ai-algorithm/actions/workflows/ci.yml"><img src="https://github.com/csong8904-spec/rehealth-ai-algorithm/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2ea44f" alt="Apache-2.0" /></a>
+  <img src="https://img.shields.io/badge/status-research%20only-f59e0b" alt="Research only" />
+</p>
+
 > [!WARNING]
 > 本项目是研究及工程参考实现，不是医疗器械，不提供疾病诊断、治疗、处方或急救判断。
 > 当前真实PPG模型未通过生产发布门槛，禁止直接用于真实用户健康结论。

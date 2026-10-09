@@ -11,6 +11,11 @@ license = {file = "LICENSE"}
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24"]
 
+[project.urls]
+Homepage = "https://github.com/csong8904-spec/rehealth-ai-algorithm"
+Repository = "https://github.com/csong8904-spec/rehealth-ai-algorithm"
+Issues = "https://github.com/csong8904-spec/rehealth-ai-algorithm/issues"
+
 [project.optional-dependencies]
 llm = [
   "torch>=2.5",

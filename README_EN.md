@@ -3,6 +3,12 @@
 <p align="center"><strong>Safety-first health trend report synthesis for wearable and check-up data</strong><br/>
 <a href="README.md">中文</a> · <a href="docs/algorithm-design.md">Algorithm design</a> · <a href="docs/benchmark-results.md">Benchmarks</a></p>
 
+<p align="center">
+  <a href="https://github.com/csong8904-spec/rehealth-ai-algorithm/actions/workflows/ci.yml"><img src="https://github.com/csong8904-spec/rehealth-ai-algorithm/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2ea44f" alt="Apache-2.0" /></a>
+  <img src="https://img.shields.io/badge/status-research%20only-f59e0b" alt="Research only" />
+</p>
+
 > [!WARNING]
 > This is a research and engineering reference, not a medical device. It does not diagnose disease,
 > prescribe treatment, or make emergency decisions. The current PPG model is blocked from production.

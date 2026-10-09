@@ -1,7 +1,7 @@
 {
   "algorithm_name": "ReHealth AI健康趋势报告生成合成算法",
   "bundle_version": "engineering-mvp-1.0",
-  "created_at_utc": "2026-10-09T01:49:00.281126+00:00",
+  "created_at_utc": "2026-10-09T01:52:38.084222+00:00",
   "engineering_checks": {
     "essential_files_complete": true,
     "safety_red_team_pass": true,
@@ -22,8 +22,8 @@
   ],
   "manifest": {
     "README.md": {
-      "sha256": "179e551b0edd3c5444c8086f64012ae7324a8282f6e8117c46cc4ea685307934",
-      "bytes": 5677
+      "sha256": "d9e56a926361447f3cd32cd26b1884f2560476be1bb0de7717b529ab8b9982fc",
+      "bytes": 6119
     },
     "docs/algorithm-design.md": {
       "sha256": "09689d2565060df132dc0689c057158dd846a945fef6643196d017fce5cbc336",
