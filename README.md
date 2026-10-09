@@ -1,85 +1,143 @@
-<p align="center"><img src="docs/assets/banner.svg" alt="ReHealth AI" width="900" /></p>
+<p align="center">
+  <img src="docs/assets/banner.svg" width="100%" alt="ReHealth AI — Fail-Closed Health Intelligence" />
+</p>
 
-<p align="center"><strong>面向可穿戴设备与体检数据的安全健康趋势报告生成合成算法</strong><br/>
-<a href="README_EN.md">English</a> · <a href="docs/algorithm-design.md">算法设计</a> · <a href="docs/benchmark-results.md">真实数据评测</a></p>
+<h1 align="center">ReHealth AI</h1>
+
+<p align="center">
+  <strong>Fail-closed health intelligence for wearable time series.</strong><br/>
+  Turn noisy biosignals into grounded, auditable health trend reports—without pretending to be a doctor.
+</p>
 
 <p align="center">
   <a href="https://github.com/csong8904-spec/rehealth-ai-algorithm/actions/workflows/ci.yml"><img src="https://github.com/csong8904-spec/rehealth-ai-algorithm/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2ea44f" alt="Apache-2.0" /></a>
-  <img src="https://img.shields.io/badge/status-research%20only-f59e0b" alt="Research only" />
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB" alt="Python 3.10+" />
+  <img src="https://img.shields.io/badge/safety-fail--closed-12B886" alt="Fail-closed" />
+  <img src="https://img.shields.io/badge/status-research%20preview-F59E0B" alt="Research preview" />
 </p>
 
-> [!WARNING]
-> 本项目是研究及工程参考实现，不是医疗器械，不提供疾病诊断、治疗、处方或急救判断。
-> 当前真实PPG模型未通过生产发布门槛，禁止直接用于真实用户健康结论。
+<p align="center">
+  <a href="#-60-second-start">60-second start</a> ·
+  <a href="#-what-is-new">What is new</a> ·
+  <a href="#-evidence-not-hype">Benchmarks</a> ·
+  <a href="README_CN.md">中文说明</a> ·
+  <a href="docs/algorithm-design.md">Deep dive</a>
+</p>
 
-## 项目简介
+> [!IMPORTANT]
+> **Research software, not a medical device.** ReHealth AI does not diagnose disease, prescribe
+> treatment, or make emergency decisions. Its current PPG model deliberately fails the production
+> release gate. That failure is published—not hidden.
 
-**ReHealth AI健康趋势报告生成合成算法**将用户授权的可穿戴设备或体检指标转换为带证据、
-置信度和人工智能标识的健康趋势报告。系统采用失败关闭设计：数据质量不足、模型未通过
-评测或生成内容越界时，自动拒绝输出风险结论。
+## The idea
 
-<p align="center"><img src="docs/assets/architecture.svg" alt="系统架构" width="900" /></p>
+Most health-AI demos optimize for a persuasive answer. ReHealth AI optimizes for a defensible one.
 
-## 核心能力
+It separates **signal estimation**, **risk inference**, and **language generation** into independently
+testable boundaries. Every boundary can refuse to proceed. The result is a reference architecture for
+teams building wellness analytics where uncertainty, provenance, and abstention matter as much as output.
 
-- 数据质量检查、缺失值识别和个人基线比较；
-- 腕部PPG与三轴加速度融合及运动伪影抑制；
-- 按受试者隔离的训练与验证，避免用户级数据泄漏；
-- 结构化风险预测与事实约束报告生成；
-- 疾病诊断、处方、疗效保证等医疗越界拦截；
-- AI生成内容显式标识、API机器标识及哈希链审计；
-- 准确性、P90误差、覆盖率和样本规模发布门禁；
-- 可选本地大模型适配器与QLoRA训练配置。
+<p align="center">
+  <img src="docs/assets/architecture.svg" width="100%" alt="ReHealth AI architecture" />
+</p>
 
-## 验证结果
+## ✦ What is new
 
-公开的 PhysioNet 腕部PPG运动数据用于离线工程验证，ECG标注只作为评测标签，不参与推理。
+| Design | Why it matters |
+|---|---|
+| **Motion-reference PPG denoising** | Learns the acceleration-correlated component inside each inference window and removes it before spectral candidate ranking—without ECG leakage. |
+| **Fact firewall** | The generator receives validated facts, not raw health records. Unsupported numbers and medical claims never become generation context. |
+| **Fail-closed model promotion** | Accuracy, P90 tail error, coverage, and cohort size are executable gates. A failed model cannot produce an activation manifest. |
+| **Tamper-evident inference trail** | Privacy-minimized audit events are chained by hash, making silent log modification detectable without storing raw health measurements. |
 
-<p align="center"><img src="docs/assets/benchmark.svg" alt="候选模型评测对比" width="820" /></p>
+This is not a wrapper around a chat model. The risk path runs independently; a language model is optional
+and replaceable. The deterministic generator remains the safe default until a reviewed local model passes
+fact-consistency and medical-boundary evaluation.
 
-| 候选版本 | MAE ↓ | P90误差 ↓ | ±10 bpm占比 ↑ | 结论 |
-|---|---:|---:|---:|---|
-| 频谱基线 v0.1 | 19.96 | 48.51 | 47.37% | 阻断 |
-| 候选排序 v0.2 | 24.06 | 69.28 | 61.11% | 阻断 |
-| 时序解码 v0.4 | 29.90 | 74.07 | 55.56% | 拒绝 |
-| 自适应去噪 v0.5 | **19.70** | 56.06 | **66.67%** | 研究领先，仍阻断 |
-| 去噪+Softmax v0.6 | 21.44 | 56.53 | 55.56% | 拒绝 |
-
-当前冻结门槛为 MAE≤10 bpm、P90≤15 bpm、±10 bpm占比≥90%、有效覆盖率≥50%，并要求
-不少于20名受试者和100条记录。现有公开数据仅8名受试者、18条可评测记录，所有候选均未
-获准生产部署。完整分析见[真实数据评测](docs/benchmark-results.md)。
-
-## 快速开始
-
-环境要求：Python 3.10+，基础运行仅依赖 NumPy。
+## ⚡ 60-second start
 
 ```bash
+git clone https://github.com/csong8904-spec/rehealth-ai-algorithm.git
+cd rehealth-ai-algorithm
 python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Linux/macOS: source .venv/bin/activate
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -e .
 python -m unittest discover -s tests -v
-```
-
-训练合成工程模型并生成演示报告：
-
-```bash
-python -m healthsynth.cli train-synthetic --output artifacts
 python -m healthsynth.cli demo --model artifacts/risk_model.json
 ```
 
-启动本地API（生产环境必须从密钥管理系统注入审计盐值）：
+Run the dependency-light local API:
 
 ```bash
 python -m healthsynth.api --audit-salt "replace-with-a-managed-secret"
 ```
 
-- 健康检查：`GET /healthz`
-- 报告接口：`POST /v1/reports`
-- API响应头：`X-AI-Generated: true`
+```http
+POST /v1/reports
+Content-Type: application/json
 
-## 复现实验
+{
+  "user_key": "demo-001",
+  "period_start": "2026-10-01",
+  "period_end": "2026-10-07",
+  "valid_coverage": 0.91,
+  "metrics": {"resting_heart_rate": 72, "sleep_duration": 6.8, "activity": 7600, "spo2": 97},
+  "baseline": {"resting_heart_rate": 66, "sleep_duration": 7.4, "activity": 8200, "spo2": 98}
+}
+```
+
+Every response carries `X-AI-Generated: true`, a visible synthesis notice, evidence, confidence, and any
+safety action applied by the output boundary.
+
+## ◎ Evidence, not hype
+
+We publish complete subject-isolated results, including regressions and rejected ideas. PhysioNet ECG
+annotations are evaluation labels only; they are never available to PPG inference.
+
+<p align="center">
+  <img src="docs/assets/benchmark.svg" width="88%" alt="PPG candidate benchmark" />
+</p>
+
+| Candidate | MAE ↓ | P90 ↓ | Within 10 bpm ↑ | Decision |
+|---|---:|---:|---:|---|
+| Spectral baseline v0.1 | 19.96 | **48.51** | 47.37% | Blocked |
+| Candidate ranker v0.2 | 24.06 | 69.28 | 61.11% | Blocked |
+| Temporal decoder v0.4 | 29.90 | 74.07 | 55.56% | Rejected |
+| **Adaptive denoising v0.5** | **19.70** | 56.06 | **66.67%** | Research champion; blocked |
+| Denoising + group softmax v0.6 | 21.44 | 56.53 | 55.56% | Rejected |
+
+The frozen production gate requires MAE ≤10 bpm, P90 ≤15 bpm, ≥90% within 10 bpm, ≥50% coverage,
+≥20 subjects, and ≥100 records. This benchmark contains 8 subjects and 18 evaluable records. **No model
+is production-approved.** See the [full benchmark history](docs/benchmark-results.md) and the machine-readable
+[release decision](artifacts/release-decisions/ppg-motion-ranker-adaptive-denoise-v1.json).
+
+## ⛨ Safety is a runtime property
+
+```text
+Authorized metrics
+      │
+      ▼
+Data-quality gate ── insufficient ──▶ abstain
+      │ valid
+      ▼
+Structured inference ── gate failed ─▶ no activation
+      │ approved facts
+      ▼
+Constrained synthesis ── unsafe text ─▶ safe fallback
+      │
+      ▼
+AI label + hash-chain audit
+```
+
+The repository ships with a medical-boundary red-team suite covering diagnosis, medication instructions,
+cure guarantees, care avoidance, and emergency exclusion. Run it with:
+
+```bash
+python scripts/evaluate_safety.py
+```
+
+## Reproduce the signal experiment
 
 ```bash
 python scripts/download_wrist_dataset.py
@@ -87,51 +145,47 @@ python scripts/benchmark_wrist_dataset.py
 python scripts/train_fusion_ranker.py --adaptive-denoise \
   --model artifacts/models/ppg_motion_ranker_adaptive_denoise_v1.json \
   --report artifacts/benchmarks/ppg_motion_ranker_adaptive_denoise_v1_loso.json
-python scripts/evaluate_safety.py
-python scripts/evaluate_release_gate.py \
-  artifacts/benchmarks/ppg_motion_ranker_adaptive_denoise_v1_loso.json \
-  --profile full \
-  --decision artifacts/release-decisions/ppg-motion-ranker-adaptive-denoise-v1.json
 ```
 
-发布门禁返回退出码 `2` 是当前模型被正确阻断的预期结果。
+Raw datasets, audit logs, secrets, virtual environments, and report-generator checkpoints are excluded
+from Git. Public artifacts include checksums, candidate models, complete benchmark outputs, and release
+decisions so results can be inspected rather than trusted.
 
-## 工作流程
-
-<p align="center"><img src="docs/assets/workflow.svg" alt="模型晋级流程" width="900" /></p>
-
-## 目录结构
+## Repository map
 
 ```text
-healthsynth/
-├── src/healthsynth/       # 推理、信号处理、安全、审计与门禁
-├── scripts/               # 数据、训练、评测和交付脚本
-├── configs/               # 可选大模型微调配置
-├── tests/                 # 自动化测试
-├── docs/                  # 算法、模型卡、数据和备案材料
-├── artifacts/benchmarks/  # 可复核的公开数据评测结果
-└── data/manifests/        # 公开数据来源与校验清单
+src/healthsynth/       inference · biosignal processing · safety · audit · release gates
+scripts/               dataset · training · evaluation · delivery automation
+artifacts/benchmarks/  complete public-data results, including failed candidates
+artifacts/models/      small research checkpoints with preprocessing metadata
+docs/                  architecture · model card · data register · filing notes
+tests/                 deterministic unit and safety tests
+configs/               optional local-LLM QLoRA configuration
 ```
 
-## 大模型说明
+## Roadmap
 
-风险计算本身不依赖大模型。自然语言报告可以使用内置的确定性生成器，也可以连接经过许可
-审查、安全微调和离线评测的本地因果语言模型。仓库中的合成SFT数据只用于验证工程链路，
-未经专业人员复核，不得作为医疗效果或备案效果证明。
+- [x] Subject-isolated PPG benchmark and official checksum verification
+- [x] Accelerometer-referenced waveform denoising
+- [x] Medical-boundary red team and fail-closed release gate
+- [x] Fact-constrained deterministic synthesis and local-LM adapter
+- [ ] Cross-device, cross-population public benchmark
+- [ ] Waveform morphology and signal-quality representation learning
+- [ ] Professionally reviewed bilingual report dataset
+- [ ] Calibrated uncertainty and subgroup robustness evaluation
 
-## 安全与合规
+## Build with us
 
-- 只处理获得明确授权的数据；
-- 第一版不接收姓名、身份证号、精确地址、人脸、声纹或原始定位轨迹；
-- 不记录原始健康数值到普通审计日志；
-- 任何生产使用都必须重新完成隐私、内容安全、医疗器械边界和真实数据验证；
-- 发现安全问题请阅读 [SECURITY.md](SECURITY.md)，不要在公开Issue中披露个人健康数据。
+Useful contributions include new public-dataset adapters, signal-quality features, stronger abstention,
+privacy tests, bilingual safety cases, and reproducible baselines. Start with
+[CONTRIBUTING.md](CONTRIBUTING.md), and never place personal health data in an issue or pull request.
 
-## 参与贡献
+If the project's approach resonates with you, **star the repository**—it helps more researchers find an
+honest, safety-first health-AI baseline.
 
-欢迎提交问题、测试、文档和算法改进。提交前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+## License and data rights
 
-## 开源许可
+Code is licensed under [Apache-2.0](LICENSE). Datasets, model weights, and dependencies retain their own
+licenses. The software license grants no medical authorization, data rights, or approval for clinical use.
 
-代码以 [Apache License 2.0](LICENSE) 发布。数据集、基础模型和第三方依赖分别遵循其自身
-许可证；本许可证不授予医疗用途批准、数据权利或第三方模型权利。
+<p align="center"><sub>Built for evidence over confidence · 可验证，胜过看起来可信</sub></p>

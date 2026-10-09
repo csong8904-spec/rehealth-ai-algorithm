@@ -17,6 +17,7 @@ Repository = "https://github.com/csong8904-spec/rehealth-ai-algorithm"
 Issues = "https://github.com/csong8904-spec/rehealth-ai-algorithm/issues"
 
 [project.optional-dependencies]
+dev = ["pillow>=10.0"]
 llm = [
   "torch>=2.5",
   "transformers>=4.51",

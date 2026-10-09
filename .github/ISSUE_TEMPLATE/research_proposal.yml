@@ -1,0 +1,24 @@
+name: Research proposal
+description: Propose a dataset adapter, baseline, safety test, or evaluation improvement
+title: "[Research]: "
+labels: ["research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Proposed evidence and validation
+      description: Include dataset license, subject-level split, metrics, and failure criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and privacy impact
+    validations:
+      required: true
