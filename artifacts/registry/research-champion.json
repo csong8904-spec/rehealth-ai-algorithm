@@ -1,0 +1,10 @@
+{
+  "registry_version": "1.0",
+  "model_id": "adaptive-denoise-v1",
+  "role": "research-champion",
+  "deployment_allowed": false,
+  "model_sha256": "483f2d641ff36f9d2b50d0d843d89414815579583683aa0966380a5963e4d943",
+  "benchmark_sha256": "ba8eba2a14cdc3b3f0cc409741a77f702927c3b72bab6b6544e615bd8f9e8e58",
+  "release_decision_sha256": "16beb46b05407a948984f2b62f93692f5cc7dadb788c6af0af64755e25347fbf",
+  "reason": "主要总体指标优于其他研究候选，但未通过生产发布门槛"
+}

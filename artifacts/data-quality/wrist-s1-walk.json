@@ -1,0 +1,161 @@
+{
+  "record": "s1_walk",
+  "activity": "Walking_2 km/h",
+  "sample_rate_hz": 256.0,
+  "samples": 150529,
+  "duration_seconds": 588.00390625,
+  "channel_count": 15,
+  "channels": [
+    {
+      "name": "chest_ecg",
+      "unit": "mV",
+      "raw_min": -32767.0,
+      "raw_max": 32767.0,
+      "raw_mean": -5292.453726524457,
+      "raw_std": 5109.85919551215,
+      "flatline_fraction": 0.004165338010204082,
+      "clipping_fraction": 6.643238180018468e-06
+    },
+    {
+      "name": "wrist_ppg",
+      "unit": "mV",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -2022.530701725249,
+      "raw_std": 5327.429416507851,
+      "flatline_fraction": 0.013014190051020409,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_gyro_x",
+      "unit": "degs^-1",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": 2774.9607650353087,
+      "raw_std": 9559.968853568413,
+      "flatline_fraction": 0.002730389030612245,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_gyro_y",
+      "unit": "degs^-1",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -6178.474626151771,
+      "raw_std": 5046.774604930278,
+      "flatline_fraction": 0.0040524022108843535,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_gyro_z",
+      "unit": "degs^-1",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": 1001.03047917677,
+      "raw_std": 7252.6724353820055,
+      "flatline_fraction": 0.0027569621598639454,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_low_noise_accelerometer_x",
+      "unit": "ms^-2",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -15935.302094612998,
+      "raw_std": 3573.3986570886045,
+      "flatline_fraction": 0.018933354591836735,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_low_noise_accelerometer_y",
+      "unit": "ms^-2",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -4950.151778062699,
+      "raw_std": 5175.941197285375,
+      "flatline_fraction": 0.011811755952380952,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_low_noise_accelerometer_z",
+      "unit": "ms^-2",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": 5900.451906277196,
+      "raw_std": 7801.955096184661,
+      "flatline_fraction": 0.009679262329931973,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_wide_range_accelerometer_x",
+      "unit": "ms^-2",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -16120.444904304153,
+      "raw_std": 3605.8518687215983,
+      "flatline_fraction": 0.017505048894557822,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_wide_range_accelerometer_y",
+      "unit": "ms^-2",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -5075.0670369164745,
+      "raw_std": 5179.214177443803,
+      "flatline_fraction": 0.007686277636054422,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_wide_range_accelerometer_z",
+      "unit": "ms^-2",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": 9291.967999521687,
+      "raw_std": 6789.908924068405,
+      "flatline_fraction": 0.006636639030612245,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_mag_x",
+      "unit": "Ga",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": 12899.744175540925,
+      "raw_std": 6038.9223279799135,
+      "flatline_fraction": 0.1985876381802721,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "wrist_mag_y",
+      "unit": "Ga",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": 4099.941433212205,
+      "raw_std": 7741.999483685862,
+      "flatline_fraction": 0.22852226828231292,
+      "clipping_fraction": 0.0015678042104843586
+    },
+    {
+      "name": "wrist_mag_z",
+      "unit": "Ga",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -2813.411801048303,
+      "raw_std": 3999.1630393622195,
+      "flatline_fraction": 0.17590747236394558,
+      "clipping_fraction": 0.00156116097230434
+    },
+    {
+      "name": "sample_times_for_all_signals_apart_from_ecg",
+      "unit": "s",
+      "raw_min": -32768.0,
+      "raw_max": 32767.0,
+      "raw_mean": -543.3517793913466,
+      "raw_std": 18817.10181554633,
+      "flatline_fraction": 0.0015478847789115646,
+      "clipping_fraction": 0.0016209501159245062
+    }
+  ],
+  "source_class": "public-licensed-real-signal"
+}

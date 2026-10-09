@@ -1,0 +1,89 @@
+{
+  "algorithm_name": "ReHealth AI健康趋势报告生成合成算法",
+  "bundle_version": "engineering-mvp-1.0",
+  "created_at_utc": "2026-10-09T01:49:00.281126+00:00",
+  "engineering_checks": {
+    "essential_files_complete": true,
+    "safety_red_team_pass": true,
+    "audit_log_implemented": true,
+    "explicit_synthesis_label_implemented": true,
+    "api_machine_label_implemented": true,
+    "release_gate_implemented": true
+  },
+  "model_release_decision": "blocked",
+  "overall_status": "engineering_mvp_complete_production_blocked",
+  "external_blockers": [
+    "备案主体、服务角色、域名/App及实际上线渠道尚未填写",
+    "真实商业数据授权、单独同意和个人信息保护影响评估须由公司完成",
+    "报告生成大模型尚未使用人工复核数据在受控GPU环境完成微调与评测",
+    "PPG研究候选未通过准确性、覆盖率和验证样本规模门槛",
+    "实名认证、投诉申诉、删除撤回、TLS、鉴权和密钥管理须接入公司生产系统",
+    "医疗器械软件属性与宣传口径须由合规或专业机构确认"
+  ],
+  "manifest": {
+    "README.md": {
+      "sha256": "179e551b0edd3c5444c8086f64012ae7324a8282f6e8117c46cc4ea685307934",
+      "bytes": 5677
+    },
+    "docs/algorithm-design.md": {
+      "sha256": "09689d2565060df132dc0689c057158dd846a945fef6643196d017fce5cbc336",
+      "bytes": 6407
+    },
+    "docs/training-plan.md": {
+      "sha256": "191dec18340fc4bd9b09b00c1e40355a7d4317cdf391cb3e29180cac2b897f9a",
+      "bytes": 5832
+    },
+    "docs/filing-outline.md": {
+      "sha256": "5e5e9350758f8854347d71a03425faff37a7bd0960ab120e3a62ff7dbdacda80",
+      "bytes": 2966
+    },
+    "docs/data-register.md": {
+      "sha256": "deab57fc7e6ea8cbd819628bd03a3b9044f28110a7b50cb9c8478eee063c4295",
+      "bytes": 1466
+    },
+    "docs/model-card.md": {
+      "sha256": "011538b7772e5434b1810bd932df29f9f6b6781f31d27bd8a932c12f07a1e080",
+      "bytes": 2455
+    },
+    "docs/release-checklist.md": {
+      "sha256": "232aed2cad3160b8eb459f91731ae75c34357f5b8ae582cad466a0628c50bb87",
+      "bytes": 1712
+    },
+    "docs/benchmark-results.md": {
+      "sha256": "b558f92250661de4fd16be44360b1b88ff0bc8066b3661c2d6e6ddc6aa9cac0f",
+      "bytes": 6123
+    },
+    "src/healthsynth/api.py": {
+      "sha256": "5fb29bbdb248b75e0aad1fe28686d35d253c144ca99a4aa82e795204f4ca6e2f",
+      "bytes": 3888
+    },
+    "src/healthsynth/safety.py": {
+      "sha256": "892b91b7303d6120c79e3a0ca6b485437293577d96ae1542a98678f38d983499",
+      "bytes": 1291
+    },
+    "src/healthsynth/audit.py": {
+      "sha256": "1f39e2b47712287d848bd2aa68552ceb3e11ef64ce8b40b0aca6e1fd390364e1",
+      "bytes": 3391
+    },
+    "src/healthsynth/release_gate.py": {
+      "sha256": "382b42414c38df42ef6c8d7a6c5b0c7b131b35ac61563b295c1bacf3be13ee90",
+      "bytes": 4118
+    },
+    "artifacts/models/ppg_motion_ranker_adaptive_denoise_v1.json": {
+      "sha256": "483f2d641ff36f9d2b50d0d843d89414815579583683aa0966380a5963e4d943",
+      "bytes": 1270
+    },
+    "artifacts/benchmarks/ppg_motion_ranker_adaptive_denoise_v1_loso.json": {
+      "sha256": "ba8eba2a14cdc3b3f0cc409741a77f702927c3b72bab6b6544e615bd8f9e8e58",
+      "bytes": 10295
+    },
+    "artifacts/release-decisions/ppg-motion-ranker-adaptive-denoise-v1.json": {
+      "sha256": "16beb46b05407a948984f2b62f93692f5cc7dadb788c6af0af64755e25347fbf",
+      "bytes": 3740
+    },
+    "artifacts/evaluations/safety-red-team.json": {
+      "sha256": "18a120e3d8469fed3deac27853a2e882a5a98ff782d0019b8f7e4e9e900e8c17",
+      "bytes": 2297
+    }
+  }
+}

@@ -1,0 +1,1483 @@
+{
+  "summary": {
+    "record": "s1_high_resistance_bike",
+    "activity": "High resistance biking_level 6",
+    "window_seconds": 8.0,
+    "stride_seconds": 4.0,
+    "window_count": 146,
+    "usable_window_fraction": 1.0,
+    "median_window_heart_rate_bpm": 105.0,
+    "motion_suppressed_ppg_heart_rate_bpm": 110.32184899028418,
+    "global_spectral_confidence": 0.012760280982110229,
+    "median_quality_score": 0.32648736146647006,
+    "heart_rate_reliable": true,
+    "warning": "工程特征，不构成医疗级心率测量",
+    "annotation_count": 1041,
+    "reference_ecg_heart_rate_bpm": 108.16901408450704,
+    "absolute_ppg_ecg_difference_bpm": 2.1528349057771408,
+    "reference_validation_pass": true,
+    "release_action": "通过带ECG参考的离线基准验证；仍不得视为医疗级测量"
+  },
+  "windows": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 8.0,
+      "heart_rate_bpm": 75.0,
+      "spectral_confidence": 0.34715488316151566,
+      "motion_index": 0.1252807928719578,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.3342883231457984
+    },
+    {
+      "start_seconds": 4.0,
+      "end_seconds": 12.0,
+      "heart_rate_bpm": 75.0,
+      "spectral_confidence": 0.43062416467881964,
+      "motion_index": 0.11307075309010611,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.4199121449870326
+    },
+    {
+      "start_seconds": 8.0,
+      "end_seconds": 16.0,
+      "heart_rate_bpm": 82.5,
+      "spectral_confidence": 0.2628961204889346,
+      "motion_index": 0.11407346274591568,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.25567240262492885
+    },
+    {
+      "start_seconds": 12.0,
+      "end_seconds": 20.0,
+      "heart_rate_bpm": 82.5,
+      "spectral_confidence": 0.5046484692594817,
+      "motion_index": 0.11874518009798388,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.4902646110834619
+    },
+    {
+      "start_seconds": 16.0,
+      "end_seconds": 24.0,
+      "heart_rate_bpm": 157.5,
+      "spectral_confidence": 0.2549249326694204,
+      "motion_index": 0.13458843254291436,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.24616825996696856
+    },
+    {
+      "start_seconds": 20.0,
+      "end_seconds": 28.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.14595392354486864,
+      "motion_index": 0.12679966476414278,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.14049615643128677
+    },
+    {
+      "start_seconds": 24.0,
+      "end_seconds": 32.0,
+      "heart_rate_bpm": 82.5,
+      "spectral_confidence": 0.28089936007390837,
+      "motion_index": 0.13058577271530633,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.26883096151094027
+    },
+    {
+      "start_seconds": 28.0,
+      "end_seconds": 36.0,
+      "heart_rate_bpm": 45.0,
+      "spectral_confidence": 0.1819240616465509,
+      "motion_index": 0.1360869414979057,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.17432209632769866
+    },
+    {
+      "start_seconds": 32.0,
+      "end_seconds": 40.0,
+      "heart_rate_bpm": 82.5,
+      "spectral_confidence": 0.24195082921400313,
+      "motion_index": 0.1454010544250686,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.23135082922570924
+    },
+    {
+      "start_seconds": 36.0,
+      "end_seconds": 44.0,
+      "heart_rate_bpm": 82.5,
+      "spectral_confidence": 0.24219251387491078,
+      "motion_index": 0.17088703291004667,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.22910187997971534
+    },
+    {
+      "start_seconds": 40.0,
+      "end_seconds": 48.0,
+      "heart_rate_bpm": 82.5,
+      "spectral_confidence": 0.12794844105904793,
+      "motion_index": 0.16528126354174758,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.12209134479365899
+    },
+    {
+      "start_seconds": 44.0,
+      "end_seconds": 52.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.20099614195813997,
+      "motion_index": 0.14437787076897743,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.19175972251510007
+    },
+    {
+      "start_seconds": 48.0,
+      "end_seconds": 56.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.31938941727966597,
+      "motion_index": 0.1317580799290294,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.30634371480042344
+    },
+    {
+      "start_seconds": 52.0,
+      "end_seconds": 60.0,
+      "heart_rate_bpm": 45.0,
+      "spectral_confidence": 0.18196099519465925,
+      "motion_index": 0.13588756518070286,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.17565888204391814
+    },
+    {
+      "start_seconds": 56.0,
+      "end_seconds": 64.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.2395396344744713,
+      "motion_index": 0.1405011453559862,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.2304343629489952
+    },
+    {
+      "start_seconds": 60.0,
+      "end_seconds": 68.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.2443718590222859,
+      "motion_index": 0.12210801685144797,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.23606450896249118
+    },
+    {
+      "start_seconds": 64.0,
+      "end_seconds": 72.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.4691988790033668,
+      "motion_index": 0.11863732099986529,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.4513719286981446
+    },
+    {
+      "start_seconds": 68.0,
+      "end_seconds": 76.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.5385388523301633,
+      "motion_index": 0.13025855014921844,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.004396678065461651,
+      "quality_score": 0.511606364939804
+    },
+    {
+      "start_seconds": 72.0,
+      "end_seconds": 80.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.28549042766266175,
+      "motion_index": 0.13239340034784577,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0039081582804103565,
+      "quality_score": 0.2717588566345316
+    },
+    {
+      "start_seconds": 76.0,
+      "end_seconds": 84.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.38617784583687675,
+      "motion_index": 0.16185036112438214,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.3678787294440098
+    },
+    {
+      "start_seconds": 80.0,
+      "end_seconds": 88.0,
+      "heart_rate_bpm": 180.0,
+      "spectral_confidence": 0.10801620329480568,
+      "motion_index": 0.3037578515115106,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.10005920788725352
+    },
+    {
+      "start_seconds": 84.0,
+      "end_seconds": 92.0,
+      "heart_rate_bpm": 172.5,
+      "spectral_confidence": 0.1259327662611713,
+      "motion_index": 0.6276536330867365,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.10774810679548397
+    },
+    {
+      "start_seconds": 88.0,
+      "end_seconds": 96.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.13630290748539475,
+      "motion_index": 0.3285734074718503,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.12459689391941639
+    },
+    {
+      "start_seconds": 92.0,
+      "end_seconds": 100.0,
+      "heart_rate_bpm": 165.0,
+      "spectral_confidence": 0.19061870133098308,
+      "motion_index": 0.29538219773986396,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.176054779133847
+    },
+    {
+      "start_seconds": 96.0,
+      "end_seconds": 104.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.18275230600308645,
+      "motion_index": 0.40557663824088436,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.1648196492823804
+    },
+    {
+      "start_seconds": 100.0,
+      "end_seconds": 108.0,
+      "heart_rate_bpm": 165.0,
+      "spectral_confidence": 0.1561691771583106,
+      "motion_index": 0.19830103089335596,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.147532019906556
+    },
+    {
+      "start_seconds": 104.0,
+      "end_seconds": 112.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.2449837071922513,
+      "motion_index": 0.11245093551608486,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.23600503946486384
+    },
+    {
+      "start_seconds": 108.0,
+      "end_seconds": 116.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.23340152564928235,
+      "motion_index": 0.09219502565384902,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.22755037872121653
+    },
+    {
+      "start_seconds": 112.0,
+      "end_seconds": 120.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.15838111964399568,
+      "motion_index": 0.09573023655787614,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.15504550999303507
+    },
+    {
+      "start_seconds": 116.0,
+      "end_seconds": 124.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.23262534385209868,
+      "motion_index": 0.0998322914543688,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.22751616920413328
+    },
+    {
+      "start_seconds": 120.0,
+      "end_seconds": 128.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.24314073693368485,
+      "motion_index": 0.09653379924635062,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.2379770511343763
+    },
+    {
+      "start_seconds": 124.0,
+      "end_seconds": 132.0,
+      "heart_rate_bpm": 75.0,
+      "spectral_confidence": 0.19155037527056396,
+      "motion_index": 0.12287482307436633,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.18455136611547956
+    },
+    {
+      "start_seconds": 128.0,
+      "end_seconds": 136.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.2668952942474679,
+      "motion_index": 0.15205475996591164,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.25418643929763596
+    },
+    {
+      "start_seconds": 132.0,
+      "end_seconds": 140.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.4876464178285399,
+      "motion_index": 0.15933216129603453,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.46595542299429177
+    },
+    {
+      "start_seconds": 136.0,
+      "end_seconds": 144.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.3963851958461274,
+      "motion_index": 0.10715642774710138,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.3842044918885419
+    },
+    {
+      "start_seconds": 140.0,
+      "end_seconds": 148.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.3805759782935103,
+      "motion_index": 0.10168149906581726,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.3711537208652164
+    },
+    {
+      "start_seconds": 144.0,
+      "end_seconds": 152.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.41404104339178643,
+      "motion_index": 0.10078092241934812,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.40486100697183786
+    },
+    {
+      "start_seconds": 148.0,
+      "end_seconds": 156.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.404957314176567,
+      "motion_index": 0.10720810306263107,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.39250862358162886
+    },
+    {
+      "start_seconds": 152.0,
+      "end_seconds": 160.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.35830710398009025,
+      "motion_index": 0.12067399190680965,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.3428309089393041
+    },
+    {
+      "start_seconds": 156.0,
+      "end_seconds": 164.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.24118345300393657,
+      "motion_index": 0.30843110679834046,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.2220722866728192
+    },
+    {
+      "start_seconds": 160.0,
+      "end_seconds": 168.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.2318743663663858,
+      "motion_index": 0.30276841490083795,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.21484348389243044
+    },
+    {
+      "start_seconds": 164.0,
+      "end_seconds": 172.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.35272649227802066,
+      "motion_index": 0.10346716404170307,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.3421715851913955
+    },
+    {
+      "start_seconds": 168.0,
+      "end_seconds": 176.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.3896726218851782,
+      "motion_index": 0.11938169806522617,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.37851145492975713
+    },
+    {
+      "start_seconds": 172.0,
+      "end_seconds": 180.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.27656408142976513,
+      "motion_index": 0.1474024275936422,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.2669418851782669
+    },
+    {
+      "start_seconds": 176.0,
+      "end_seconds": 184.0,
+      "heart_rate_bpm": 45.0,
+      "spectral_confidence": 0.10720245172058279,
+      "motion_index": 0.13395484192859186,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.10328078113511692
+    },
+    {
+      "start_seconds": 180.0,
+      "end_seconds": 188.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.14756677050418623,
+      "motion_index": 0.11851525207401245,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.1426660644822546
+    },
+    {
+      "start_seconds": 184.0,
+      "end_seconds": 192.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.46359209582983485,
+      "motion_index": 0.13153041619666858,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.4479780692886749
+    },
+    {
+      "start_seconds": 188.0,
+      "end_seconds": 196.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.5252004849392544,
+      "motion_index": 0.11133732540373151,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.5085818182166629
+    },
+    {
+      "start_seconds": 192.0,
+      "end_seconds": 200.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.3727092202234992,
+      "motion_index": 0.1016788631507428,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.36170191361426307
+    },
+    {
+      "start_seconds": 196.0,
+      "end_seconds": 204.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.46214557456524424,
+      "motion_index": 0.09200982596302065,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.4516847629133287
+    },
+    {
+      "start_seconds": 200.0,
+      "end_seconds": 208.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.5191077643333782,
+      "motion_index": 0.10011665253641677,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.5051939830836222
+    },
+    {
+      "start_seconds": 204.0,
+      "end_seconds": 212.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.3267016382406149,
+      "motion_index": 0.09870270841635954,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.317265425803028
+    },
+    {
+      "start_seconds": 208.0,
+      "end_seconds": 216.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.3917934229138061,
+      "motion_index": 0.11321738961463235,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.3801683855212122
+    },
+    {
+      "start_seconds": 212.0,
+      "end_seconds": 220.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.3170643979987853,
+      "motion_index": 0.11532545815908579,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.3075103429895289
+    },
+    {
+      "start_seconds": 216.0,
+      "end_seconds": 224.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.4950142426165142,
+      "motion_index": 0.1086363474333072,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.47728228766619557
+    },
+    {
+      "start_seconds": 220.0,
+      "end_seconds": 228.0,
+      "heart_rate_bpm": 45.0,
+      "spectral_confidence": 0.2943844874020741,
+      "motion_index": 0.11676735794473844,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.2833191409255682
+    },
+    {
+      "start_seconds": 224.0,
+      "end_seconds": 232.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.4260881544315927,
+      "motion_index": 0.11114216006353334,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.4105931832094714
+    },
+    {
+      "start_seconds": 228.0,
+      "end_seconds": 236.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.2612772857940005,
+      "motion_index": 0.09920608445454192,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0039081582804103565,
+      "quality_score": 0.2505806863119416
+    },
+    {
+      "start_seconds": 232.0,
+      "end_seconds": 240.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.6043973381705754,
+      "motion_index": 0.10678467754742163,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.582990365131919
+    },
+    {
+      "start_seconds": 236.0,
+      "end_seconds": 244.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.19002960777452094,
+      "motion_index": 0.10718265486378888,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.1841890116646336
+    },
+    {
+      "start_seconds": 240.0,
+      "end_seconds": 248.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.24568641388949622,
+      "motion_index": 0.09711691935171195,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.23750068863332635
+    },
+    {
+      "start_seconds": 244.0,
+      "end_seconds": 252.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.43647398390387504,
+      "motion_index": 0.1257845727244849,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.419212469997872
+    },
+    {
+      "start_seconds": 248.0,
+      "end_seconds": 256.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.19027039238941468,
+      "motion_index": 0.14342039198605333,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.18336670824486442
+    },
+    {
+      "start_seconds": 252.0,
+      "end_seconds": 260.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.2769322504710521,
+      "motion_index": 0.12463403862880389,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.26868102288280005
+    },
+    {
+      "start_seconds": 256.0,
+      "end_seconds": 264.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.4052901829811927,
+      "motion_index": 0.11216642674206767,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.3904613312701203
+    },
+    {
+      "start_seconds": 260.0,
+      "end_seconds": 268.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.4386695487293225,
+      "motion_index": 0.07679975331843768,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.42388408276659206
+    },
+    {
+      "start_seconds": 264.0,
+      "end_seconds": 272.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.47669988561246696,
+      "motion_index": 0.07916240771049776,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0039081582804103565,
+      "quality_score": 0.4592449453744825
+    },
+    {
+      "start_seconds": 268.0,
+      "end_seconds": 276.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.47661368798799536,
+      "motion_index": 0.10247765962861374,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.4601787436578631
+    },
+    {
+      "start_seconds": 272.0,
+      "end_seconds": 280.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.49076477397888585,
+      "motion_index": 0.11145194763269962,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.47522345504489893
+    },
+    {
+      "start_seconds": 276.0,
+      "end_seconds": 284.0,
+      "heart_rate_bpm": 45.0,
+      "spectral_confidence": 0.31883011470873707,
+      "motion_index": 0.10690714885391531,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.3090499936470367
+    },
+    {
+      "start_seconds": 280.0,
+      "end_seconds": 288.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.30475785323901267,
+      "motion_index": 0.2295003901872453,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.2886637867441417
+    },
+    {
+      "start_seconds": 284.0,
+      "end_seconds": 292.0,
+      "heart_rate_bpm": 45.0,
+      "spectral_confidence": 0.1620284332475925,
+      "motion_index": 0.11256989521109176,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.1560858926628419
+    },
+    {
+      "start_seconds": 288.0,
+      "end_seconds": 296.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.3935990771145601,
+      "motion_index": 0.19309029521672136,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.004885197850512946,
+      "quality_score": 0.3676733980586124
+    },
+    {
+      "start_seconds": 292.0,
+      "end_seconds": 300.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.16635035388362454,
+      "motion_index": 0.11627605545259304,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.15932345869057304
+    },
+    {
+      "start_seconds": 296.0,
+      "end_seconds": 304.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.42158799585203227,
+      "motion_index": 0.12571472207631196,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.4069241666114542
+    },
+    {
+      "start_seconds": 300.0,
+      "end_seconds": 308.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.36097776038024965,
+      "motion_index": 0.11961368182651394,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.348044541739108
+    },
+    {
+      "start_seconds": 304.0,
+      "end_seconds": 312.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.5706639898803765,
+      "motion_index": 0.11059450539795833,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.552699318065864
+    },
+    {
+      "start_seconds": 308.0,
+      "end_seconds": 316.0,
+      "heart_rate_bpm": 97.5,
+      "spectral_confidence": 0.47175892120151347,
+      "motion_index": 0.10544866332738126,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.45631238251239903
+    },
+    {
+      "start_seconds": 312.0,
+      "end_seconds": 320.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.4267413024091957,
+      "motion_index": 0.1448418119972943,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.4080973915063328
+    },
+    {
+      "start_seconds": 316.0,
+      "end_seconds": 324.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.44864665245676894,
+      "motion_index": 0.1526239687645102,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.4304051181333519
+    },
+    {
+      "start_seconds": 320.0,
+      "end_seconds": 328.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.45981784056442876,
+      "motion_index": 0.12477338757501492,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.4461034541277443
+    },
+    {
+      "start_seconds": 324.0,
+      "end_seconds": 332.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.6101183473491457,
+      "motion_index": 0.11337279057385302,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.5949007670329042
+    },
+    {
+      "start_seconds": 328.0,
+      "end_seconds": 336.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.4482884267562463,
+      "motion_index": 0.11816731924202221,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.43556783498351004
+    },
+    {
+      "start_seconds": 332.0,
+      "end_seconds": 340.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.3230852049712562,
+      "motion_index": 0.10199601097789283,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.3119781597732848
+    },
+    {
+      "start_seconds": 336.0,
+      "end_seconds": 344.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.4849589063216514,
+      "motion_index": 0.11247104849904406,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0039081582804103565,
+      "quality_score": 0.4637172639682373
+    },
+    {
+      "start_seconds": 340.0,
+      "end_seconds": 348.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.37068320420183903,
+      "motion_index": 0.17955800022365992,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.34995255075639975
+    },
+    {
+      "start_seconds": 344.0,
+      "end_seconds": 352.0,
+      "heart_rate_bpm": 52.5,
+      "spectral_confidence": 0.12413388899001793,
+      "motion_index": 0.09017310843236159,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.12077972785425246
+    },
+    {
+      "start_seconds": 348.0,
+      "end_seconds": 356.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.40167323600550975,
+      "motion_index": 0.15930930020681577,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.3866486338909365
+    },
+    {
+      "start_seconds": 352.0,
+      "end_seconds": 360.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.20188383752588915,
+      "motion_index": 0.1501162328522921,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.19473967283621488
+    },
+    {
+      "start_seconds": 356.0,
+      "end_seconds": 364.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.4154773030369925,
+      "motion_index": 0.1609425201472502,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.399787439451735
+    },
+    {
+      "start_seconds": 360.0,
+      "end_seconds": 368.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.282201525854768,
+      "motion_index": 0.1403330748436044,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.2728210160925554
+    },
+    {
+      "start_seconds": 364.0,
+      "end_seconds": 372.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.33214544480441144,
+      "motion_index": 0.13018710561475702,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.3218443513169176
+    },
+    {
+      "start_seconds": 368.0,
+      "end_seconds": 376.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.23929606989302574,
+      "motion_index": 0.1432350622114547,
+      "clipping_fraction": 0.00048828125,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.2289261183368681
+    },
+    {
+      "start_seconds": 372.0,
+      "end_seconds": 380.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.16761707648622096,
+      "motion_index": 0.15803687835477628,
+      "clipping_fraction": 0.00048828125,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.15902381344338523
+    },
+    {
+      "start_seconds": 376.0,
+      "end_seconds": 384.0,
+      "heart_rate_bpm": 90.0,
+      "spectral_confidence": 0.23328718874369117,
+      "motion_index": 0.1675616033682329,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.22249210940768338
+    },
+    {
+      "start_seconds": 380.0,
+      "end_seconds": 388.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.3043567318421874,
+      "motion_index": 0.13460220798301586,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.29101553123748025
+    },
+    {
+      "start_seconds": 384.0,
+      "end_seconds": 392.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.4977243674475522,
+      "motion_index": 0.10651290782116303,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0039081582804103565,
+      "quality_score": 0.4765632501929743
+    },
+    {
+      "start_seconds": 388.0,
+      "end_seconds": 396.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.4482378678407992,
+      "motion_index": 0.14612653969614448,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.42746998247107765
+    },
+    {
+      "start_seconds": 392.0,
+      "end_seconds": 400.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.4319720302849256,
+      "motion_index": 0.27446641436842567,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.4029141632106932
+    },
+    {
+      "start_seconds": 396.0,
+      "end_seconds": 404.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.28619807879552195,
+      "motion_index": 0.2264461444766278,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.27194021946555186
+    },
+    {
+      "start_seconds": 400.0,
+      "end_seconds": 408.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.13742968630074565,
+      "motion_index": 0.22198249938596565,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.12976027350990652
+    },
+    {
+      "start_seconds": 404.0,
+      "end_seconds": 412.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.3015407349810598,
+      "motion_index": 0.18891184619716161,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.28477292786120345
+    },
+    {
+      "start_seconds": 408.0,
+      "end_seconds": 416.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.32512682013125493,
+      "motion_index": 0.17144361065198527,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0039081582804103565,
+      "quality_score": 0.3067502120024822
+    },
+    {
+      "start_seconds": 412.0,
+      "end_seconds": 420.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.2643135607061208,
+      "motion_index": 0.199142730927741,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.2484123253934789
+    },
+    {
+      "start_seconds": 416.0,
+      "end_seconds": 424.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.36264963513272896,
+      "motion_index": 0.15314427378346293,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.34786344820299353
+    },
+    {
+      "start_seconds": 420.0,
+      "end_seconds": 428.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.221460183384797,
+      "motion_index": 0.15318521546463254,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.21086055942082896
+    },
+    {
+      "start_seconds": 424.0,
+      "end_seconds": 432.0,
+      "heart_rate_bpm": 172.5,
+      "spectral_confidence": 0.18881085252330324,
+      "motion_index": 0.15399316270812,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0039081582804103565,
+      "quality_score": 0.17884970653333493
+    },
+    {
+      "start_seconds": 428.0,
+      "end_seconds": 436.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.24597262832887348,
+      "motion_index": 0.16372871811797168,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.23537510297730987
+    },
+    {
+      "start_seconds": 432.0,
+      "end_seconds": 440.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.3518047398638618,
+      "motion_index": 0.131447385352425,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.34079663319769543
+    },
+    {
+      "start_seconds": 436.0,
+      "end_seconds": 444.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.4978307137217041,
+      "motion_index": 0.13541021712969223,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.48064066180878606
+    },
+    {
+      "start_seconds": 440.0,
+      "end_seconds": 448.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.4712218059452965,
+      "motion_index": 0.13613227411630804,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.4548760682402527
+    },
+    {
+      "start_seconds": 444.0,
+      "end_seconds": 452.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.25756163368850754,
+      "motion_index": 0.12951769644253958,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.24655553781271108
+    },
+    {
+      "start_seconds": 448.0,
+      "end_seconds": 456.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.37430425488911845,
+      "motion_index": 0.13290258754934403,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.3580348755710574
+    },
+    {
+      "start_seconds": 452.0,
+      "end_seconds": 460.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.36182235063441676,
+      "motion_index": 0.13938974052351694,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.3498701145455054
+    },
+    {
+      "start_seconds": 456.0,
+      "end_seconds": 464.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.4104566278743008,
+      "motion_index": 0.13161611356304234,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.39662453123948754
+    },
+    {
+      "start_seconds": 460.0,
+      "end_seconds": 468.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.34644926048850727,
+      "motion_index": 0.12096112599422207,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.33558231008479034
+    },
+    {
+      "start_seconds": 464.0,
+      "end_seconds": 472.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.45344117107519905,
+      "motion_index": 0.10901804375001896,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.44040383005347455
+    },
+    {
+      "start_seconds": 468.0,
+      "end_seconds": 476.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.39166245876694106,
+      "motion_index": 0.1242368559879505,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.3790964452696192
+    },
+    {
+      "start_seconds": 472.0,
+      "end_seconds": 480.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.510797119060451,
+      "motion_index": 0.13908497980181578,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.4915389074935086
+    },
+    {
+      "start_seconds": 476.0,
+      "end_seconds": 484.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.41779819115339395,
+      "motion_index": 0.14293436526340816,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.4007066017297549
+    },
+    {
+      "start_seconds": 480.0,
+      "end_seconds": 488.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.4847500446058436,
+      "motion_index": 0.13109512549522592,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.4696195028215055
+    },
+    {
+      "start_seconds": 484.0,
+      "end_seconds": 492.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.3736108176815212,
+      "motion_index": 0.13510432879743356,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.3616205443867487
+    },
+    {
+      "start_seconds": 488.0,
+      "end_seconds": 496.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.22071975942401248,
+      "motion_index": 0.1307641627161514,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.2122755874369777
+    },
+    {
+      "start_seconds": 492.0,
+      "end_seconds": 500.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.2740052826753917,
+      "motion_index": 0.13651301038833044,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.2631793818974279
+    },
+    {
+      "start_seconds": 496.0,
+      "end_seconds": 504.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.14418069930562163,
+      "motion_index": 0.1415397920355439,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.13900867332057099
+    },
+    {
+      "start_seconds": 500.0,
+      "end_seconds": 508.0,
+      "heart_rate_bpm": 52.5,
+      "spectral_confidence": 0.22473674294675988,
+      "motion_index": 0.13703423614739094,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.21742909231934926
+    },
+    {
+      "start_seconds": 504.0,
+      "end_seconds": 512.0,
+      "heart_rate_bpm": 112.5,
+      "spectral_confidence": 0.242137561585142,
+      "motion_index": 0.1469078830250446,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.23202242152241168
+    },
+    {
+      "start_seconds": 508.0,
+      "end_seconds": 516.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.4094064282959526,
+      "motion_index": 0.1362782688922627,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.391311720374205
+    },
+    {
+      "start_seconds": 512.0,
+      "end_seconds": 520.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.4721801960707644,
+      "motion_index": 0.14103309420016946,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.45529460532836574
+    },
+    {
+      "start_seconds": 516.0,
+      "end_seconds": 524.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.2469246486510397,
+      "motion_index": 0.14139035212130555,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.23690633379307738
+    },
+    {
+      "start_seconds": 520.0,
+      "end_seconds": 528.0,
+      "heart_rate_bpm": 52.5,
+      "spectral_confidence": 0.2881279531853147,
+      "motion_index": 0.13813522874488018,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.2745950635334092
+    },
+    {
+      "start_seconds": 524.0,
+      "end_seconds": 532.0,
+      "heart_rate_bpm": 52.5,
+      "spectral_confidence": 0.1923439005436981,
+      "motion_index": 0.13961105818287295,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.003419638495359062,
+      "quality_score": 0.18324844527242762
+    },
+    {
+      "start_seconds": 528.0,
+      "end_seconds": 536.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.48583727526463943,
+      "motion_index": 0.13418572947942897,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.4645849026283084
+    },
+    {
+      "start_seconds": 532.0,
+      "end_seconds": 540.0,
+      "heart_rate_bpm": 105.0,
+      "spectral_confidence": 0.17777341779749453,
+      "motion_index": 0.13843508621672443,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.17067518295309178
+    },
+    {
+      "start_seconds": 536.0,
+      "end_seconds": 544.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.25666525523538,
+      "motion_index": 0.140050594024473,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.002442598925256473,
+      "quality_score": 0.24571903928439512
+    },
+    {
+      "start_seconds": 540.0,
+      "end_seconds": 548.0,
+      "heart_rate_bpm": 120.0,
+      "spectral_confidence": 0.348444065383547,
+      "motion_index": 0.16160936716447075,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0029311187103077674,
+      "quality_score": 0.3311303716160226
+    },
+    {
+      "start_seconds": 544.0,
+      "end_seconds": 552.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.5233360239912906,
+      "motion_index": 0.185360332101341,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.4983162457718259
+    },
+    {
+      "start_seconds": 548.0,
+      "end_seconds": 556.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.4834482805464703,
+      "motion_index": 0.1743861229654201,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0,
+      "quality_score": 0.4649008128607348
+    },
+    {
+      "start_seconds": 552.0,
+      "end_seconds": 560.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.4925417310871152,
+      "motion_index": 0.1317748647506751,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.4770945106946542
+    },
+    {
+      "start_seconds": 556.0,
+      "end_seconds": 564.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.36061129030228,
+      "motion_index": 0.11265865728151177,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.3482375838994176
+    },
+    {
+      "start_seconds": 560.0,
+      "end_seconds": 568.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.5325243895115146,
+      "motion_index": 0.12931648463840456,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0019540791402051783,
+      "quality_score": 0.5123193181254405
+    },
+    {
+      "start_seconds": 564.0,
+      "end_seconds": 572.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.49593252161028495,
+      "motion_index": 0.15441050473663528,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.4755748981229463
+    },
+    {
+      "start_seconds": 568.0,
+      "end_seconds": 576.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.374792614289,
+      "motion_index": 0.16736978430112373,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0014655593551538837,
+      "quality_score": 0.3583469655099557
+    },
+    {
+      "start_seconds": 572.0,
+      "end_seconds": 580.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.19145141629266665,
+      "motion_index": 0.15371385214662778,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.1840734449540429
+    },
+    {
+      "start_seconds": 576.0,
+      "end_seconds": 584.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.5259113915274295,
+      "motion_index": 0.15160179643187474,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0009770395701025891,
+      "quality_score": 0.5058874940964225
+    },
+    {
+      "start_seconds": 580.0,
+      "end_seconds": 588.0,
+      "heart_rate_bpm": 127.5,
+      "spectral_confidence": 0.4970123984229381,
+      "motion_index": 0.16506018938636552,
+      "clipping_fraction": 0.0,
+      "flatline_fraction": 0.0004885197850512946,
+      "quality_score": 0.47779434948447785
+    }
+  ]
+}

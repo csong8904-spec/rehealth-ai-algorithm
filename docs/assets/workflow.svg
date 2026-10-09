@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="310" viewBox="0 0 1200 310" role="img" aria-labelledby="title">
+  <title id="title">Fail-closed model promotion workflow</title><rect width="1200" height="310" rx="24" fill="#071b33"/>
+  <style>.h{font:700 25px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#fff}.t{font:600 17px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#e7f3ff}.s{font:13px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#9fc3df}.b{fill:#123653;stroke:#477b9f;stroke-width:2}.g{fill:#0b6c61;stroke:#49e6c3;stroke-width:2}.r{fill:#60303a;stroke:#ff8b91;stroke-width:2}.a{stroke:#88aeca;stroke-width:3;fill:none;marker-end:url(#m)}</style>
+  <defs><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L8 3L0 6z" fill="#88aeca"/></marker></defs>
+  <text x="42" y="47" class="h">模型晋级 / Model Promotion</text>
+  <rect x="42" y="90" width="180" height="105" rx="16" class="b"/><text x="132" y="130" text-anchor="middle" class="t">候选训练</text><text x="132" y="160" text-anchor="middle" class="s">Candidate training</text>
+  <rect x="272" y="90" width="180" height="105" rx="16" class="b"/><text x="362" y="130" text-anchor="middle" class="t">受试者隔离验证</text><text x="362" y="160" text-anchor="middle" class="s">Subject-isolated</text>
+  <rect x="502" y="90" width="180" height="105" rx="16" class="b"/><text x="592" y="130" text-anchor="middle" class="t">安全红队</text><text x="592" y="160" text-anchor="middle" class="s">Safety red team</text>
+  <rect x="732" y="90" width="180" height="105" rx="16" class="r"/><text x="822" y="130" text-anchor="middle" class="t">冻结门禁</text><text x="822" y="160" text-anchor="middle" class="s">Frozen release gate</text>
+  <rect x="962" y="90" width="195" height="105" rx="16" class="g"/><text x="1059" y="130" text-anchor="middle" class="t">激活或阻断</text><text x="1059" y="160" text-anchor="middle" class="s">Activate or block</text>
+  <path d="M222 142h42" class="a"/><path d="M452 142h42" class="a"/><path d="M682 142h42" class="a"/><path d="M912 142h42" class="a"/>
+  <text x="600" y="250" text-anchor="middle" class="s">未通过任何一项检查 → 不生成激活清单 / Any failed check → no activation manifest</text>
+</svg>

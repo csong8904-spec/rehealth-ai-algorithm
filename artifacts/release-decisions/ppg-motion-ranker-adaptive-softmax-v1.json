@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "decision": "blocked",
+  "profile": "full",
+  "evaluated_at_utc": "2026-10-07T09:00:25.176221+00:00",
+  "thresholds": {
+    "max_mean_absolute_error_bpm": 10.0,
+    "max_p90_absolute_error_bpm": 15.0,
+    "min_within_10_bpm_fraction": 0.9,
+    "min_coverage": 0.5,
+    "min_subjects": 20,
+    "min_records": 100
+  },
+  "selected_metrics": {
+    "validation": "leave-one-subject-out",
+    "candidate_version": "adaptive-denoise-group-softmax-v1",
+    "subjects": 8,
+    "records": 18,
+    "windows": 786,
+    "mean_absolute_error_bpm": 21.44479928719835,
+    "median_absolute_error_bpm": 7.576043820868712,
+    "p90_absolute_error_bpm": 56.528270509977844,
+    "within_10_bpm_fraction": 0.5555555555555556,
+    "release_gate_pass": false,
+    "selective_prediction": [
+      {
+        "consensus_threshold": 0.5,
+        "coverage": 0.3888888888888889,
+        "accepted_records": 7,
+        "mean_absolute_error_bpm": 14.57281491124716,
+        "p90_absolute_error_bpm": 39.887025543089074,
+        "within_10_bpm_fraction": 0.8571428571428571
+      },
+      {
+        "consensus_threshold": 0.6,
+        "coverage": 0.3888888888888889,
+        "accepted_records": 7,
+        "mean_absolute_error_bpm": 14.57281491124716,
+        "p90_absolute_error_bpm": 39.887025543089074,
+        "within_10_bpm_fraction": 0.8571428571428571
+      },
+      {
+        "consensus_threshold": 0.7,
+        "coverage": 0.2777777777777778,
+        "accepted_records": 5,
+        "mean_absolute_error_bpm": 19.457452686769646,
+        "p90_absolute_error_bpm": 56.57930880643685,
+        "within_10_bpm_fraction": 0.8
+      },
+      {
+        "consensus_threshold": 0.8,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 0.7748735154139723,
+        "p90_absolute_error_bpm": 0.9356975946490621,
+        "within_10_bpm_fraction": 1.0
+      }
+    ],
+    "harmonic_aware_selective_prediction": [
+      {
+        "harmonic_ambiguity_max": 0.3,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 0.7164836303356878,
+        "p90_absolute_error_bpm": 0.9117177786987213,
+        "within_10_bpm_fraction": 1.0
+      },
+      {
+        "harmonic_ambiguity_max": 0.4,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 0.7164836303356878,
+        "p90_absolute_error_bpm": 0.9117177786987213,
+        "within_10_bpm_fraction": 1.0
+      }
+    ],
+    "coverage": 1.0
+  },
+  "checks": {
+    "mean_absolute_error_bpm": false,
+    "p90_absolute_error_bpm": false,
+    "within_10_bpm_fraction": false,
+    "coverage": true,
+    "subjects": false,
+    "records": false
+  },
+  "failed_checks": [
+    "mean_absolute_error_bpm",
+    "p90_absolute_error_bpm",
+    "within_10_bpm_fraction",
+    "subjects",
+    "records"
+  ],
+  "benchmark_path": "artifacts\\benchmarks\\ppg_motion_ranker_adaptive_softmax_v1_loso.json",
+  "benchmark_sha256": "105619ac10affdeddebc0ec8b5432ff00023a4e219849803513122118d63ee90"
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "decision": "blocked",
+  "profile": "full",
+  "evaluated_at_utc": "2026-10-07T08:44:31.207665+00:00",
+  "thresholds": {
+    "max_mean_absolute_error_bpm": 10.0,
+    "max_p90_absolute_error_bpm": 15.0,
+    "min_within_10_bpm_fraction": 0.9,
+    "min_coverage": 0.5,
+    "min_subjects": 20,
+    "min_records": 100
+  },
+  "selected_metrics": {
+    "validation": "leave-one-subject-out",
+    "candidate_version": "adaptive-denoise-v1",
+    "subjects": 8,
+    "records": 18,
+    "windows": 786,
+    "mean_absolute_error_bpm": 19.70009104921208,
+    "median_absolute_error_bpm": 6.8652442804408835,
+    "p90_absolute_error_bpm": 56.05863636363638,
+    "within_10_bpm_fraction": 0.6666666666666666,
+    "release_gate_pass": false,
+    "selective_prediction": [
+      {
+        "consensus_threshold": 0.5,
+        "coverage": 0.6111111111111112,
+        "accepted_records": 11,
+        "mean_absolute_error_bpm": 22.17112322947883,
+        "p90_absolute_error_bpm": 84.54545454545453,
+        "within_10_bpm_fraction": 0.7272727272727273
+      },
+      {
+        "consensus_threshold": 0.6,
+        "coverage": 0.4444444444444444,
+        "accepted_records": 8,
+        "mean_absolute_error_bpm": 24.12411023000708,
+        "p90_absolute_error_bpm": 87.18458733913495,
+        "within_10_bpm_fraction": 0.75
+      },
+      {
+        "consensus_threshold": 0.7,
+        "coverage": 0.2777777777777778,
+        "accepted_records": 5,
+        "mean_absolute_error_bpm": 19.359835612588128,
+        "p90_absolute_error_bpm": 56.57930880643685,
+        "within_10_bpm_fraction": 0.8
+      },
+      {
+        "consensus_threshold": 0.8,
+        "coverage": 0.16666666666666666,
+        "accepted_records": 3,
+        "mean_absolute_error_bpm": 31.630770296183517,
+        "p90_absolute_error_bpm": 74.86923180906966,
+        "within_10_bpm_fraction": 0.6666666666666666
+      }
+    ],
+    "harmonic_aware_selective_prediction": [
+      {
+        "harmonic_ambiguity_max": 0.1,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 26.27282608695652,
+        "p90_absolute_error_bpm": 40.3345652173913,
+        "within_10_bpm_fraction": 0.5
+      },
+      {
+        "harmonic_ambiguity_max": 0.2,
+        "coverage": 0.16666666666666666,
+        "accepted_records": 3,
+        "mean_absolute_error_bpm": 17.67269770626498,
+        "p90_absolute_error_bpm": 36.81913043478261,
+        "within_10_bpm_fraction": 0.6666666666666666
+      },
+      {
+        "harmonic_ambiguity_max": 0.3,
+        "coverage": 0.3888888888888889,
+        "accepted_records": 7,
+        "mean_absolute_error_bpm": 20.337327284905466,
+        "p90_absolute_error_bpm": 60.12818181818182,
+        "within_10_bpm_fraction": 0.7142857142857143
+      },
+      {
+        "harmonic_ambiguity_max": 0.4,
+        "coverage": 0.5555555555555556,
+        "accepted_records": 10,
+        "mean_absolute_error_bpm": 24.092975846651875,
+        "p90_absolute_error_bpm": 85.42516547668134,
+        "within_10_bpm_fraction": 0.7
+      }
+    ],
+    "coverage": 1.0
+  },
+  "checks": {
+    "mean_absolute_error_bpm": false,
+    "p90_absolute_error_bpm": false,
+    "within_10_bpm_fraction": false,
+    "coverage": true,
+    "subjects": false,
+    "records": false
+  },
+  "failed_checks": [
+    "mean_absolute_error_bpm",
+    "p90_absolute_error_bpm",
+    "within_10_bpm_fraction",
+    "subjects",
+    "records"
+  ],
+  "benchmark_path": "artifacts\\benchmarks\\ppg_motion_ranker_adaptive_denoise_v1_loso.json",
+  "benchmark_sha256": "ba8eba2a14cdc3b3f0cc409741a77f702927c3b72bab6b6544e615bd8f9e8e58"
+}

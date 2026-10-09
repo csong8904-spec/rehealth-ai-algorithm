@@ -1,0 +1,308 @@
+{
+  "metrics": {
+    "validation": "leave-one-subject-out with label-free temporal decoding",
+    "candidate_version": "temporal-decoder-v1",
+    "subjects": 8,
+    "records": 18,
+    "windows": 786,
+    "mean_absolute_error_bpm": 29.895858259831634,
+    "median_absolute_error_bpm": 8.948572355613237,
+    "p90_absolute_error_bpm": 74.0693450250537,
+    "within_10_bpm_fraction": 0.5555555555555556,
+    "release_gate_pass": false,
+    "selective_prediction": [
+      {
+        "consensus_threshold": 0.5,
+        "coverage": 0.7777777777777778,
+        "accepted_records": 14,
+        "mean_absolute_error_bpm": 32.8534993149346,
+        "p90_absolute_error_bpm": 82.19855046528276,
+        "within_10_bpm_fraction": 0.5
+      },
+      {
+        "consensus_threshold": 0.6,
+        "coverage": 0.7777777777777778,
+        "accepted_records": 14,
+        "mean_absolute_error_bpm": 32.8534993149346,
+        "p90_absolute_error_bpm": 82.19855046528276,
+        "within_10_bpm_fraction": 0.5
+      },
+      {
+        "consensus_threshold": 0.7,
+        "coverage": 0.5,
+        "accepted_records": 9,
+        "mean_absolute_error_bpm": 30.417071364762315,
+        "p90_absolute_error_bpm": 89.30487640790815,
+        "within_10_bpm_fraction": 0.6666666666666666
+      },
+      {
+        "consensus_threshold": 0.8,
+        "coverage": 0.3333333333333333,
+        "accepted_records": 6,
+        "mean_absolute_error_bpm": 32.94066673684271,
+        "p90_absolute_error_bpm": 90.81900920158857,
+        "within_10_bpm_fraction": 0.6666666666666666
+      },
+      {
+        "consensus_threshold": 0.9,
+        "coverage": 0.2777777777777778,
+        "accepted_records": 5,
+        "mean_absolute_error_bpm": 39.2419148383096,
+        "p90_absolute_error_bpm": 91.32372013281538,
+        "within_10_bpm_fraction": 0.6
+      }
+    ],
+    "harmonic_aware_selective_prediction": [
+      {
+        "harmonic_ambiguity_max": 0.1,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 6.589498011784173,
+        "p90_absolute_error_bpm": 7.9410964212115065,
+        "within_10_bpm_fraction": 1.0
+      },
+      {
+        "harmonic_ambiguity_max": 0.2,
+        "coverage": 0.2222222222222222,
+        "accepted_records": 4,
+        "mean_absolute_error_bpm": 10.358708345666646,
+        "p90_absolute_error_bpm": 16.300825281803547,
+        "within_10_bpm_fraction": 0.75
+      },
+      {
+        "harmonic_ambiguity_max": 0.3,
+        "coverage": 0.3333333333333333,
+        "accepted_records": 6,
+        "mean_absolute_error_bpm": 21.86078569293822,
+        "p90_absolute_error_bpm": 53.92781986531986,
+        "within_10_bpm_fraction": 0.6666666666666666
+      },
+      {
+        "harmonic_ambiguity_max": 0.4,
+        "coverage": 0.3888888888888889,
+        "accepted_records": 7,
+        "mean_absolute_error_bpm": 19.136312548834262,
+        "p90_absolute_error_bpm": 47.054292929292956,
+        "within_10_bpm_fraction": 0.7142857142857143
+      }
+    ]
+  },
+  "records": [
+    {
+      "subject": "s1",
+      "record": "s1_high_resistance_bike",
+      "predicted_bpm": 105.0,
+      "target_bpm": 107.22545746935991,
+      "absolute_error_bpm": 2.2254574693599096,
+      "window_count": 72,
+      "prediction_mad_bpm": 11.25,
+      "consensus_fraction_10_bpm": 0.4166666666666667,
+      "median_score_margin": 0.2718945686104688,
+      "harmonic_ambiguity_fraction": 0.375
+    },
+    {
+      "subject": "s1",
+      "record": "s1_low_resistance_bike",
+      "predicted_bpm": 82.5,
+      "target_bpm": 83.93442622950819,
+      "absolute_error_bpm": 1.4344262295081904,
+      "window_count": 71,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.8169014084507042,
+      "median_score_margin": 0.23447941414880846,
+      "harmonic_ambiguity_fraction": 0.29577464788732394
+    },
+    {
+      "subject": "s1",
+      "record": "s1_walk",
+      "predicted_bpm": 60.0,
+      "target_bpm": 57.04740294225159,
+      "absolute_error_bpm": 2.952597057748413,
+      "window_count": 72,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.7222222222222222,
+      "median_score_margin": 0.07292112806919804,
+      "harmonic_ambiguity_fraction": 0.7777777777777778
+    },
+    {
+      "subject": "s2",
+      "record": "s2_high_resistance_bike",
+      "predicted_bpm": 52.5,
+      "target_bpm": 120.4724409448819,
+      "absolute_error_bpm": 67.9724409448819,
+      "window_count": 50,
+      "prediction_mad_bpm": 7.5,
+      "consensus_fraction_10_bpm": 0.64,
+      "median_score_margin": 0.18610071189094848,
+      "harmonic_ambiguity_fraction": 0.5
+    },
+    {
+      "subject": "s2",
+      "record": "s2_low_resistance_bike",
+      "predicted_bpm": 48.75,
+      "target_bpm": 109.32384341637011,
+      "absolute_error_bpm": 60.57384341637011,
+      "window_count": 41,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.6829268292682927,
+      "median_score_margin": 0.13353303395440086,
+      "harmonic_ambiguity_fraction": 0.4634146341463415
+    },
+    {
+      "subject": "s2",
+      "record": "s2_walk",
+      "predicted_bpm": 48.75,
+      "target_bpm": 84.049404895576,
+      "absolute_error_bpm": 35.299404895576004,
+      "window_count": 48,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.6041666666666666,
+      "median_score_margin": 0.08680930002148629,
+      "harmonic_ambiguity_fraction": 0.5833333333333334
+    },
+    {
+      "subject": "s3",
+      "record": "s3_high_resistance_bike",
+      "predicted_bpm": 121.875,
+      "target_bpm": 128.0,
+      "absolute_error_bpm": 6.125,
+      "window_count": 34,
+      "prediction_mad_bpm": 24.375,
+      "consensus_fraction_10_bpm": 0.47058823529411764,
+      "median_score_margin": 0.1279651593007794,
+      "harmonic_ambiguity_fraction": 0.5294117647058824
+    },
+    {
+      "subject": "s3",
+      "record": "s3_low_resistance_bike",
+      "predicted_bpm": 105.0,
+      "target_bpm": 107.78947368421052,
+      "absolute_error_bpm": 2.7894736842105203,
+      "window_count": 35,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.6285714285714286,
+      "median_score_margin": 0.15343612033202092,
+      "harmonic_ambiguity_fraction": 0.3142857142857143
+    },
+    {
+      "subject": "s3",
+      "record": "s3_run",
+      "predicted_bpm": 120.0,
+      "target_bpm": 111.30434782608695,
+      "absolute_error_bpm": 8.695652173913047,
+      "window_count": 37,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.9459459459459459,
+      "median_score_margin": 0.07912265225323334,
+      "harmonic_ambiguity_fraction": 0.10810810810810811
+    },
+    {
+      "subject": "s4",
+      "record": "s4_run",
+      "predicted_bpm": 86.25,
+      "target_bpm": 174.54545454545453,
+      "absolute_error_bpm": 88.29545454545453,
+      "window_count": 35,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.9428571428571428,
+      "median_score_margin": 0.05193119785484979,
+      "harmonic_ambiguity_fraction": 0.2857142857142857
+    },
+    {
+      "subject": "s5",
+      "record": "s5_low_resistance_bike",
+      "predicted_bpm": 63.75,
+      "target_bpm": 124.37450826121164,
+      "absolute_error_bpm": 60.624508261211645,
+      "window_count": 34,
+      "prediction_mad_bpm": 15.0,
+      "consensus_fraction_10_bpm": 0.3235294117647059,
+      "median_score_margin": 0.09219922135817787,
+      "harmonic_ambiguity_fraction": 0.38235294117647056
+    },
+    {
+      "subject": "s5",
+      "record": "s5_run",
+      "predicted_bpm": 60.0,
+      "target_bpm": 124.8780487804878,
+      "absolute_error_bpm": 64.8780487804878,
+      "window_count": 37,
+      "prediction_mad_bpm": 7.5,
+      "consensus_fraction_10_bpm": 0.7027027027027027,
+      "median_score_margin": 0.06814365314160253,
+      "harmonic_ambiguity_fraction": 0.5675675675675675
+    },
+    {
+      "subject": "s6",
+      "record": "s6_low_resistance_bike",
+      "predicted_bpm": 108.75,
+      "target_bpm": 117.02899602356834,
+      "absolute_error_bpm": 8.27899602356834,
+      "window_count": 34,
+      "prediction_mad_bpm": 7.5,
+      "consensus_fraction_10_bpm": 0.7058823529411765,
+      "median_score_margin": 0.1789325190510221,
+      "harmonic_ambiguity_fraction": 0.058823529411764705
+    },
+    {
+      "subject": "s6",
+      "record": "s6_run",
+      "predicted_bpm": 114.375,
+      "target_bpm": 94.81481481481481,
+      "absolute_error_bpm": 19.56018518518519,
+      "window_count": 36,
+      "prediction_mad_bpm": 5.625,
+      "consensus_fraction_10_bpm": 0.6944444444444444,
+      "median_score_margin": 0.07087762253070296,
+      "harmonic_ambiguity_fraction": 0.16666666666666666
+    },
+    {
+      "subject": "s6",
+      "record": "s6_walk",
+      "predicted_bpm": 82.5,
+      "target_bpm": 91.70149253731343,
+      "absolute_error_bpm": 9.201492537313428,
+      "window_count": 41,
+      "prediction_mad_bpm": 11.25,
+      "consensus_fraction_10_bpm": 0.43902439024390244,
+      "median_score_margin": 0.08714219492718478,
+      "harmonic_ambiguity_fraction": 0.4146341463414634
+    },
+    {
+      "subject": "s8",
+      "record": "s8_run",
+      "predicted_bpm": 180.0,
+      "target_bpm": 86.65743614227739,
+      "absolute_error_bpm": 93.34256385772261,
+      "window_count": 34,
+      "prediction_mad_bpm": 0.0,
+      "consensus_fraction_10_bpm": 1.0,
+      "median_score_margin": 0.21324702203854992,
+      "harmonic_ambiguity_fraction": 0.4411764705882353
+    },
+    {
+      "subject": "s8",
+      "record": "s8_walk",
+      "predicted_bpm": 75.0,
+      "target_bpm": 74.02409638554217,
+      "absolute_error_bpm": 0.9759036144578346,
+      "window_count": 49,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.9591836734693877,
+      "median_score_margin": 0.17367749192808862,
+      "harmonic_ambiguity_fraction": 0.5510204081632653
+    },
+    {
+      "subject": "s9",
+      "record": "s9_walk",
+      "predicted_bpm": 97.5,
+      "target_bpm": 102.4,
+      "absolute_error_bpm": 4.900000000000006,
+      "window_count": 26,
+      "prediction_mad_bpm": 0.0,
+      "consensus_fraction_10_bpm": 1.0,
+      "median_score_margin": 0.06780354783327625,
+      "harmonic_ambiguity_fraction": 0.038461538461538464
+    }
+  ]
+}

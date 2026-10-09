@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title">
+  <title id="title">ReHealth AI architecture</title><rect width="1200" height="480" rx="24" fill="#f6f9fc"/>
+  <style>.h{font:700 27px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#102a43}.t{font:600 18px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#16324f}.s{font:14px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#486581}.b{fill:#fff;stroke:#8fb8d8;stroke-width:2}.g{fill:#e7fff8;stroke:#27ad91;stroke-width:2}.r{fill:#fff0f0;stroke:#df6464;stroke-width:2}.a{stroke:#5d7d99;stroke-width:3;fill:none;marker-end:url(#m)}</style>
+  <defs><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L8 3L0 6z" fill="#5d7d99"/></marker></defs>
+  <text x="50" y="55" class="h">ReHealth AI · 安全健康趋势生成架构</text>
+  <rect x="45" y="105" width="190" height="110" rx="16" class="b"/><text x="140" y="145" text-anchor="middle" class="t">授权数据</text><text x="140" y="176" text-anchor="middle" class="s">Wearable · Check-up</text>
+  <rect x="285" y="105" width="190" height="110" rx="16" class="g"/><text x="380" y="145" text-anchor="middle" class="t">质量门控</text><text x="380" y="176" text-anchor="middle" class="s">Coverage · Missingness</text>
+  <rect x="525" y="105" width="190" height="110" rx="16" class="g"/><text x="620" y="145" text-anchor="middle" class="t">趋势与风险</text><text x="620" y="176" text-anchor="middle" class="s">Baseline · Confidence</text>
+  <rect x="765" y="105" width="190" height="110" rx="16" class="b"/><text x="860" y="145" text-anchor="middle" class="t">事实约束生成</text><text x="860" y="176" text-anchor="middle" class="s">Grounded synthesis</text>
+  <rect x="1005" y="105" width="150" height="110" rx="16" class="r"/><text x="1080" y="145" text-anchor="middle" class="t">安全输出</text><text x="1080" y="176" text-anchor="middle" class="s">Block · Label</text>
+  <path d="M235 160h42" class="a"/><path d="M475 160h42" class="a"/><path d="M715 160h42" class="a"/><path d="M955 160h42" class="a"/>
+  <rect x="285" y="300" width="190" height="100" rx="16" class="b"/><text x="380" y="340" text-anchor="middle" class="t">PPG运动去噪</text><text x="380" y="370" text-anchor="middle" class="s">PPG + Accelerometer</text>
+  <rect x="525" y="300" width="190" height="100" rx="16" class="r"/><text x="620" y="340" text-anchor="middle" class="t">发布门禁</text><text x="620" y="370" text-anchor="middle" class="s">Fail closed</text>
+  <rect x="765" y="300" width="190" height="100" rx="16" class="b"/><text x="860" y="340" text-anchor="middle" class="t">哈希链审计</text><text x="860" y="370" text-anchor="middle" class="s">Tamper evident</text>
+  <path d="M380 220v72" class="a"/><path d="M475 350h42" class="a"/><path d="M715 350h42" class="a"/><path d="M860 292v-69" class="a"/>
+</svg>

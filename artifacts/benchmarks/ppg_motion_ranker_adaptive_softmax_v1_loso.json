@@ -1,0 +1,284 @@
+{
+  "metrics": {
+    "validation": "leave-one-subject-out",
+    "candidate_version": "adaptive-denoise-group-softmax-v1",
+    "subjects": 8,
+    "records": 18,
+    "windows": 786,
+    "mean_absolute_error_bpm": 21.44479928719835,
+    "median_absolute_error_bpm": 7.576043820868712,
+    "p90_absolute_error_bpm": 56.528270509977844,
+    "within_10_bpm_fraction": 0.5555555555555556,
+    "release_gate_pass": false,
+    "selective_prediction": [
+      {
+        "consensus_threshold": 0.5,
+        "coverage": 0.3888888888888889,
+        "accepted_records": 7,
+        "mean_absolute_error_bpm": 14.57281491124716,
+        "p90_absolute_error_bpm": 39.887025543089074,
+        "within_10_bpm_fraction": 0.8571428571428571
+      },
+      {
+        "consensus_threshold": 0.6,
+        "coverage": 0.3888888888888889,
+        "accepted_records": 7,
+        "mean_absolute_error_bpm": 14.57281491124716,
+        "p90_absolute_error_bpm": 39.887025543089074,
+        "within_10_bpm_fraction": 0.8571428571428571
+      },
+      {
+        "consensus_threshold": 0.7,
+        "coverage": 0.2777777777777778,
+        "accepted_records": 5,
+        "mean_absolute_error_bpm": 19.457452686769646,
+        "p90_absolute_error_bpm": 56.57930880643685,
+        "within_10_bpm_fraction": 0.8
+      },
+      {
+        "consensus_threshold": 0.8,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 0.7748735154139723,
+        "p90_absolute_error_bpm": 0.9356975946490621,
+        "within_10_bpm_fraction": 1.0
+      }
+    ],
+    "harmonic_aware_selective_prediction": [
+      {
+        "harmonic_ambiguity_max": 0.3,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 0.7164836303356878,
+        "p90_absolute_error_bpm": 0.9117177786987213,
+        "within_10_bpm_fraction": 1.0
+      },
+      {
+        "harmonic_ambiguity_max": 0.4,
+        "coverage": 0.1111111111111111,
+        "accepted_records": 2,
+        "mean_absolute_error_bpm": 0.7164836303356878,
+        "p90_absolute_error_bpm": 0.9117177786987213,
+        "within_10_bpm_fraction": 1.0
+      }
+    ]
+  },
+  "records": [
+    {
+      "subject": "s1",
+      "record": "s1_high_resistance_bike",
+      "predicted_bpm": 105.0,
+      "target_bpm": 107.22545746935991,
+      "absolute_error_bpm": 2.2254574693599096,
+      "window_count": 72,
+      "prediction_mad_bpm": 11.25,
+      "consensus_fraction_10_bpm": 0.3888888888888889,
+      "median_score_margin": 0.23667965500590066,
+      "harmonic_ambiguity_fraction": 0.3194444444444444
+    },
+    {
+      "subject": "s1",
+      "record": "s1_low_resistance_bike",
+      "predicted_bpm": 82.5,
+      "target_bpm": 83.93442622950819,
+      "absolute_error_bpm": 1.4344262295081904,
+      "window_count": 71,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.7746478873239436,
+      "median_score_margin": 0.19645387408618098,
+      "harmonic_ambiguity_fraction": 0.7887323943661971
+    },
+    {
+      "subject": "s1",
+      "record": "s1_walk",
+      "predicted_bpm": 93.75,
+      "target_bpm": 57.04740294225159,
+      "absolute_error_bpm": 36.70259705774841,
+      "window_count": 72,
+      "prediction_mad_bpm": 37.5,
+      "consensus_fraction_10_bpm": 0.08333333333333333,
+      "median_score_margin": 0.06099284297962004,
+      "harmonic_ambiguity_fraction": 0.6388888888888888
+    },
+    {
+      "subject": "s2",
+      "record": "s2_high_resistance_bike",
+      "predicted_bpm": 120.0,
+      "target_bpm": 120.4724409448819,
+      "absolute_error_bpm": 0.47244094488189603,
+      "window_count": 50,
+      "prediction_mad_bpm": 7.5,
+      "consensus_fraction_10_bpm": 0.62,
+      "median_score_margin": 0.2580332369763869,
+      "harmonic_ambiguity_fraction": 0.28
+    },
+    {
+      "subject": "s2",
+      "record": "s2_low_resistance_bike",
+      "predicted_bpm": 108.75,
+      "target_bpm": 109.32384341637011,
+      "absolute_error_bpm": 0.57384341637011,
+      "window_count": 41,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.8780487804878049,
+      "median_score_margin": 0.29130006674290754,
+      "harmonic_ambiguity_fraction": 0.4634146341463415
+    },
+    {
+      "subject": "s2",
+      "record": "s2_walk",
+      "predicted_bpm": 93.75,
+      "target_bpm": 84.049404895576,
+      "absolute_error_bpm": 9.700595104423996,
+      "window_count": 48,
+      "prediction_mad_bpm": 15.0,
+      "consensus_fraction_10_bpm": 0.3958333333333333,
+      "median_score_margin": 0.06832602118336445,
+      "harmonic_ambiguity_fraction": 0.5416666666666666
+    },
+    {
+      "subject": "s3",
+      "record": "s3_high_resistance_bike",
+      "predicted_bpm": 123.75,
+      "target_bpm": 128.0,
+      "absolute_error_bpm": 4.25,
+      "window_count": 34,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.6470588235294118,
+      "median_score_margin": 0.15615721356723616,
+      "harmonic_ambiguity_fraction": 0.5588235294117647
+    },
+    {
+      "subject": "s3",
+      "record": "s3_low_resistance_bike",
+      "predicted_bpm": 108.75,
+      "target_bpm": 107.78947368421052,
+      "absolute_error_bpm": 0.9605263157894797,
+      "window_count": 35,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.7142857142857143,
+      "median_score_margin": 0.18683290296256905,
+      "harmonic_ambiguity_fraction": 0.2857142857142857
+    },
+    {
+      "subject": "s3",
+      "record": "s3_run",
+      "predicted_bpm": 78.75,
+      "target_bpm": 111.30434782608695,
+      "absolute_error_bpm": 32.55434782608695,
+      "window_count": 37,
+      "prediction_mad_bpm": 11.25,
+      "consensus_fraction_10_bpm": 0.4594594594594595,
+      "median_score_margin": 0.05838253463294718,
+      "harmonic_ambiguity_fraction": 0.16216216216216217
+    },
+    {
+      "subject": "s4",
+      "record": "s4_run",
+      "predicted_bpm": 93.75,
+      "target_bpm": 174.54545454545453,
+      "absolute_error_bpm": 80.79545454545453,
+      "window_count": 35,
+      "prediction_mad_bpm": 11.25,
+      "consensus_fraction_10_bpm": 0.4,
+      "median_score_margin": 0.06593399420429802,
+      "harmonic_ambiguity_fraction": 0.22857142857142856
+    },
+    {
+      "subject": "s5",
+      "record": "s5_low_resistance_bike",
+      "predicted_bpm": 82.5,
+      "target_bpm": 124.37450826121164,
+      "absolute_error_bpm": 41.874508261211645,
+      "window_count": 34,
+      "prediction_mad_bpm": 22.5,
+      "consensus_fraction_10_bpm": 0.2647058823529412,
+      "median_score_margin": 0.031093276690682348,
+      "harmonic_ambiguity_fraction": 0.5588235294117647
+    },
+    {
+      "subject": "s5",
+      "record": "s5_run",
+      "predicted_bpm": 78.75,
+      "target_bpm": 124.8780487804878,
+      "absolute_error_bpm": 46.1280487804878,
+      "window_count": 37,
+      "prediction_mad_bpm": 30.0,
+      "consensus_fraction_10_bpm": 0.21621621621621623,
+      "median_score_margin": 0.05127137474524168,
+      "harmonic_ambiguity_fraction": 0.4594594594594595
+    },
+    {
+      "subject": "s6",
+      "record": "s6_low_resistance_bike",
+      "predicted_bpm": 105.0,
+      "target_bpm": 117.02899602356834,
+      "absolute_error_bpm": 12.02899602356834,
+      "window_count": 34,
+      "prediction_mad_bpm": 15.0,
+      "consensus_fraction_10_bpm": 0.23529411764705882,
+      "median_score_margin": 0.11567440873024343,
+      "harmonic_ambiguity_fraction": 0.23529411764705882
+    },
+    {
+      "subject": "s6",
+      "record": "s6_run",
+      "predicted_bpm": 108.75,
+      "target_bpm": 94.81481481481481,
+      "absolute_error_bpm": 13.93518518518519,
+      "window_count": 36,
+      "prediction_mad_bpm": 15.0,
+      "consensus_fraction_10_bpm": 0.3055555555555556,
+      "median_score_margin": 0.05373917882533685,
+      "harmonic_ambiguity_fraction": 0.25
+    },
+    {
+      "subject": "s6",
+      "record": "s6_walk",
+      "predicted_bpm": 86.25,
+      "target_bpm": 91.70149253731343,
+      "absolute_error_bpm": 5.4514925373134275,
+      "window_count": 41,
+      "prediction_mad_bpm": 22.5,
+      "consensus_fraction_10_bpm": 0.2682926829268293,
+      "median_score_margin": 0.07013815528219414,
+      "harmonic_ambiguity_fraction": 0.5853658536585366
+    },
+    {
+      "subject": "s8",
+      "record": "s8_run",
+      "predicted_bpm": 180.0,
+      "target_bpm": 86.65743614227739,
+      "absolute_error_bpm": 93.34256385772261,
+      "window_count": 34,
+      "prediction_mad_bpm": 0.0,
+      "consensus_fraction_10_bpm": 0.7352941176470589,
+      "median_score_margin": 0.07720796300182575,
+      "harmonic_ambiguity_fraction": 0.4411764705882353
+    },
+    {
+      "subject": "s8",
+      "record": "s8_walk",
+      "predicted_bpm": 75.0,
+      "target_bpm": 74.02409638554217,
+      "absolute_error_bpm": 0.9759036144578346,
+      "window_count": 49,
+      "prediction_mad_bpm": 3.75,
+      "consensus_fraction_10_bpm": 0.8775510204081632,
+      "median_score_margin": 0.18583755740334051,
+      "harmonic_ambiguity_fraction": 0.4897959183673469
+    },
+    {
+      "subject": "s9",
+      "record": "s9_walk",
+      "predicted_bpm": 105.0,
+      "target_bpm": 102.4,
+      "absolute_error_bpm": 2.5999999999999943,
+      "window_count": 26,
+      "prediction_mad_bpm": 41.25,
+      "consensus_fraction_10_bpm": 0.4230769230769231,
+      "median_score_margin": 0.13828754809533134,
+      "harmonic_ambiguity_fraction": 0.15384615384615385
+    }
+  ]
+}

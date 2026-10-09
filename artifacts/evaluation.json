@@ -1,0 +1,29 @@
+{
+  "data_class": "synthetic-pipeline-validation-only",
+  "seed": 20261007,
+  "split": {
+    "train": 840,
+    "validation": 180,
+    "test": 180
+  },
+  "training": {
+    "initial_loss": 0.6931476332345615,
+    "final_loss": 0.28085339466820114
+  },
+  "validation": {
+    "accuracy": 0.9333333333333333,
+    "auroc": 0.9527499527499528,
+    "brier_score": 0.06838967503679759,
+    "positive_rate": 0.20555555555555555
+  },
+  "test": {
+    "accuracy": 0.8777777777777778,
+    "auroc": 0.8980357142857143,
+    "brier_score": 0.09014980500745248,
+    "positive_rate": 0.2222222222222222
+  },
+  "limitations": [
+    "该模型仅验证工程流程，不得用于真实用户或备案效果证明",
+    "生产模型必须使用经授权的真实目标设备数据重新训练与验证"
+  ]
+}

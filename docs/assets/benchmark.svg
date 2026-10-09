@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title">
+  <title id="title">Mean absolute error by candidate model</title><rect width="1000" height="500" rx="24" fill="#f6f9fc"/>
+  <style>.h{font:700 25px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#102a43}.t{font:15px 'Segoe UI','Microsoft YaHei',sans-serif;fill:#334e68}.v{font:700 16px 'Segoe UI',sans-serif;fill:#102a43}.grid{stroke:#d9e2ec;stroke-width:1}</style>
+  <text x="50" y="48" class="h">候选模型平均绝对误差 / MAE (bpm)</text>
+  <line x1="250" y1="85" x2="250" y2="430" class="grid"/><line x1="450" y1="85" x2="450" y2="430" class="grid"/><line x1="650" y1="85" x2="650" y2="430" class="grid"/><line x1="850" y1="85" x2="850" y2="430" class="grid"/>
+  <text x="242" y="455" class="t">0</text><text x="438" y="455" class="t">10</text><text x="638" y="455" class="t">20</text><text x="838" y="455" class="t">30</text>
+  <text x="35" y="126" class="t">频谱基线 v0.1</text><rect x="250" y="100" width="399" height="36" rx="8" fill="#7aa7d9"/><text x="660" y="124" class="v">19.96</text>
+  <text x="35" y="198" class="t">候选排序 v0.2</text><rect x="250" y="172" width="481" height="36" rx="8" fill="#7aa7d9"/><text x="742" y="196" class="v">24.06</text>
+  <text x="35" y="270" class="t">时序解码 v0.4</text><rect x="250" y="244" width="598" height="36" rx="8" fill="#df7777"/><text x="859" y="268" class="v">29.90</text>
+  <text x="35" y="342" class="t">自适应去噪 v0.5</text><rect x="250" y="316" width="394" height="36" rx="8" fill="#28b99b"/><text x="655" y="340" class="v">19.70</text>
+  <text x="35" y="414" class="t">去噪+Softmax v0.6</text><rect x="250" y="388" width="429" height="36" rx="8" fill="#7aa7d9"/><text x="690" y="412" class="v">21.44</text>
+  <line x1="450" y1="85" x2="450" y2="430" stroke="#e34d59" stroke-width="3" stroke-dasharray="8 7"/><text x="460" y="78" class="t" fill="#c93643">发布门槛 10 bpm</text>
+</svg>

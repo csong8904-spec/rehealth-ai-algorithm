@@ -1,0 +1,7 @@
+# Install only in the reviewed training environment with a supported Python/PyTorch/CUDA matrix.
+torch>=2.5
+transformers>=4.51
+accelerate>=1.0
+peft>=0.14
+datasets>=3.0
+bitsandbytes>=0.45; platform_system != "Windows"

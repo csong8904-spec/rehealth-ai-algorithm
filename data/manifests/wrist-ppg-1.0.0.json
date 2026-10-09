@@ -1,0 +1,16 @@
+{
+  "dataset": "Wrist PPG During Exercise",
+  "version": "1.0.0",
+  "source": "https://physionet.org/content/wrist/1.0.0/",
+  "license": "Open Data Commons Attribution License v1.0",
+  "retrieved_date": "2026-10-07",
+  "records": [
+    {
+      "name": "s1_walk",
+      "files": ["s1_walk.hea", "s1_walk.dat", "s1_walk.atr"],
+      "data_sha256": "8613a4dcee27e3ad0f489b78c3a60fdb8743907ff31d3c7c644799ba776fc2e5",
+      "official_checksum_match": true,
+      "purpose": "parser-and-signal-quality-validation-only"
+    }
+  ]
+}
