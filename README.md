@@ -22,6 +22,7 @@
   <a href="#-what-is-new">What is new</a> ·
   <a href="#-evidence-not-hype">Benchmarks</a> ·
   <a href="README_CN.md">中文说明</a> ·
+  <a href="docs/health-trend-algorithm.md">Trend-report scope</a> ·
   <a href="docs/algorithm-design.md">Deep dive</a>
 </p>
 
@@ -55,6 +56,8 @@ This is not a wrapper around a chat model. The risk path runs independently; a l
 and replaceable. The deterministic generator remains the safe default until a reviewed local model passes
 fact-consistency and medical-boundary evaluation.
 
+For the proposed first live capability, use the separate [non-diagnostic trend-report core](docs/health-trend-algorithm.md): it compares validated period aggregates with a personal baseline, abstains when coverage is low, and never invokes the blocked PPG risk model. It is an algorithm component, **not** an authenticated production service.
+
 ## ⚡ 60-second start
 
 ```bash
@@ -63,11 +66,12 @@ cd rehealth-ai-algorithm
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -e .
-python -m unittest discover -s tests -v
+pip install pytest
+python -m pytest -q
 python -m healthsynth.cli demo --model artifacts/risk_model.json
 ```
 
-Run the dependency-light local API:
+Run the dependency-light **research-only, unauthenticated** local API on loopback. Never expose it to the public internet:
 
 ```bash
 python -m healthsynth.api --audit-salt "replace-with-a-managed-secret"
