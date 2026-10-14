@@ -1,0 +1,19 @@
+# Example only. Merge with the server's existing Nginx configuration after review.
+# Initial HTTP configuration for certificate issuance and local validation.
+server {
+    listen 80;
+    server_name ai.jsruihe.cn;
+    root /var/www/rehealth-ai;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+    add_header X-Frame-Options SAMEORIGIN always;
+}
+
+# After a valid certificate is installed, configure HTTPS and redirect port 80
+# to HTTPS. Keep the existing root-domain virtual hosts unchanged.
