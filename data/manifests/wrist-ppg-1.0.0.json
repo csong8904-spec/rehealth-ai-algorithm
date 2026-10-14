@@ -4,6 +4,12 @@
   "source": "https://physionet.org/content/wrist/1.0.0/",
   "license": "Open Data Commons Attribution License v1.0",
   "retrieved_date": "2026-10-07",
+  "local_audit_date": "2026-10-14",
+  "local_record_count": 19,
+  "local_subject_count": 8,
+  "official_sha256_entries_verified": 59,
+  "total_recording_hours_from_headers": 1.8850206163194447,
+  "supports_future_24h_labels": false,
   "records": [
     {
       "name": "s1_walk",
