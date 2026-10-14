@@ -4,7 +4,19 @@ This document describes **睿禾健康趋势报告生成合成算法**. The fili
 
 ## Product boundary
 
-The first report capability compares a user's validated period aggregates with that same user's baseline and writes an evidence-linked, non-diagnostic trend summary. It does **not** infer chronic disease, issue emergency alerts, recommend medication, or substitute for a clinician. The current PPG research risk candidate is blocked and is excluded from the live report path.
+The product scope includes **two mandatory branches**: (A) a trend report comparing validated period aggregates with that user's baseline; and (B) a PPG-derived risk prediction, once its prediction target and time horizon are precisely defined and independently validated. The report does not triage emergencies, recommend medication, or substitute for a clinician. The current PPG research candidate is blocked and must not serve real-user predictions.
+
+## Mandatory PPG risk branch: design and go/no-go
+
+PPG is a noisy optical measurement, not a disease label. The existing public benchmark measures **heart-rate estimation error under motion**, not the accuracy of any chronic-disease or clinical-event risk prediction. The algorithm therefore needs two separately validated layers:
+
+1. **Signal layer:** wrist PPG plus synchronized motion channels and device metadata → signal-quality score → motion-artifact suppression → heart-rate/variability features with uncertainty. On poor signal or device mismatch, abstain. The existing candidate is research-only; current release decision: `blocked`.
+2. **Prediction layer:** a specified target outcome and forecast horizon → patient-separated training/validation/test → calibrated probability and uncertainty → abstain or risk band. Outcome labels must come from legitimately authorized, clinically meaningful ground truth; heart-rate error metrics cannot substitute for AUROC, calibration, sensitivity/specificity, and subgroup evaluation of the risk target.
+3. **Report layer:** only approved, versioned prediction facts may be provided to the generator; the output must carry model version, evidence window, limitations, AI-content label, and a review/complaint route. An unapproved prediction never becomes a report sentence.
+
+The product team must specify whether "risk" means a physiological trend anomaly or a named disease/event, plus the forecast time window and intended population. This choice changes labels, model, clinical evidence, user wording, and potential medical-device classification. Until it is fixed, no numerical risk score should be presented as clinically meaningful.
+
+**Release rule:** both the signal layer and target-specific prediction layer must pass pre-registered acceptance gates on independent target-device and target-population data. If either fails, the PPG branch remains unavailable for real users; the trend branch may remain separate. A DeepSeek key cannot make an unvalidated PPG predictor safe or accurate.
 
 ## Input → facts → synthesis → output
 
@@ -30,4 +42,4 @@ The public algorithm site should provide: exact algorithm name and service scope
 
 ## Release separation
 
-`src/healthsynth/trend_report.py` is an inspectable algorithm component. `src/healthsynth/api.py` is a local development API **without production authentication** and uses the research risk model; do not expose it to the public internet. The public research site does not constitute a live personal health-report service. A true production launch additionally needs authentication, sensitive-data consent, reviewed legal notices, retention/deletion controls, report provenance, complaint and human-review operations, security monitoring, and a tested deployment. The operator's key and infrastructure access alone cannot substitute for those gates.
+`src/healthsynth/trend_report.py` is an inspectable algorithm component. `src/healthsynth/api.py` is a local development API **without production authentication** and uses the research risk model; do not expose it to the public internet. The public research site does not constitute a live personal health-report service. A true production launch additionally needs an approved PPG signal model and a validated target-specific risk model, authentication, sensitive-data consent, reviewed legal notices, retention/deletion controls, report provenance, complaint and human-review operations, security monitoring, and a tested deployment. The operator's key and infrastructure access alone cannot substitute for those gates.

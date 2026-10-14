@@ -56,7 +56,7 @@ This is not a wrapper around a chat model. The risk path runs independently; a l
 and replaceable. The deterministic generator remains the safe default until a reviewed local model passes
 fact-consistency and medical-boundary evaluation.
 
-For the proposed first live capability, use the separate [non-diagnostic trend-report core](docs/health-trend-algorithm.md): it compares validated period aggregates with a personal baseline, abstains when coverage is low, and never invokes the blocked PPG risk model. It is an algorithm component, **not** an authenticated production service.
+The requested product scope includes both the [non-diagnostic trend-report core and a PPG risk branch](docs/health-trend-algorithm.md). The former compares validated period aggregates with a personal baseline and abstains when coverage is low. The PPG branch is mandatory for the intended product but **not production-approved**: its signal estimator fails the current gate, and a target-specific risk outcome and validation set are still required. Neither the research API nor this repository is an authenticated production service.
 
 ## ⚡ 60-second start
 
