@@ -58,7 +58,7 @@ fact-consistency and medical-boundary evaluation.
 
 The requested product scope includes both the [non-diagnostic trend-report core and a PPG risk branch](docs/health-trend-algorithm.md). The former compares validated period aggregates with a personal baseline and abstains when coverage is low. The PPG branch is mandatory for the intended product but **not production-approved**: its signal estimator fails the current gate, and a target-specific risk outcome and validation set are still required. Neither the research API nor this repository is an authenticated production service.
 
-The selected PPG target is a **next-day physiological trend**, not a disease diagnosis. A [research label builder](src/healthsynth/ppg_trend_target.py) now defines the retrospective next-day heart-rate-deviation outcome without looking ahead when constructing the personal baseline. It is not a trained predictor and cannot be promoted from the current exercise-only dataset.
+The operator selected a **future 24-hour heart-rate / physiological-indicator trend forecast**, not a disease diagnosis. The downloaded Wrist PPG During Exercise recordings support motion-affected heart-rate estimator training and evaluation, but do not contain the longitudinal future labels needed to train or validate that forecast.
 
 ## ⚡ 60-second start
 
